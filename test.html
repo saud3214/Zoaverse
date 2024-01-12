@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script> 
+
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .box {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+    }
+
+    #div1 {
+      background-color: lightblue;
+      z-index: 2;
+    }
+
+    #div2 {
+      background-color: lightgreen;
+      y: 100%;
+      z-index: 1;
+      position: relative;
+    }
+
+    #div3, #div4 {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform-origin: center;
+      transform: scale(1);
+    }
+
+    #div3 {
+      background-color: lightcoral;
+    }
+
+    #div4 {
+      background-color: lightyellow;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div id="div1" class="box">
+    <button onclick="showDiv2()">Show Div 2</button>
+  </div>
+
+  <div id="div2" class="box">
+    <div id="div3">
+      <h1>Div 3</h1>
+    </div>
+  </div>
+
+  
+</div>
+
+<script>
+  function showDiv2() {
+    gsap.to("#div1", { y: "-100%", duration: 2, ease: "power2.inOut" });
+    gsap.to("#div2", { y: "0%", duration: 0.5, ease: "power2.inOut", onComplete: scaleDiv3 });
+  }
+
+  function scaleDiv3() {
+    gsap.to("#div3", { scale: 0.9, duration: 2, ease: "power2.inOut", delay: 2 });
+    initScrollMagic();
+  }
+
+  
+
+
+
+//   const lenis = new Lenis()
+
+// lenis.on('scroll', (e) => {
+//   console.log(e)
+// })
+
+// function raf(time) {
+//   lenis.raf(time)
+//   requestAnimationFrame(raf)
+// }
+
+// requestAnimationFrame(raf)
+</script>
+
+</body>
+</html>
