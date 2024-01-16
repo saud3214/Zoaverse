@@ -3,117 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
-  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script> 
-
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <style>
     body, html {
-      height: 100%;
       margin: 0;
-    }
-
-    .container {
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      height: 100%;
+      font-family: Arial, sans-serif;
       overflow: hidden;
-      position: relative;
     }
 
-    .box {
+    .swiper-container {
       width: 100%;
       height: 100%;
+    }
+
+    .swiper-slide {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      position: absolute;
-    }
-
-    #div1 {
-      background-color: lightblue;
-      z-index: 2;
-    }
-
-    #div2 {
-      background-color: lightgreen;
-      y: 100%;
-      z-index: 1;
-      position: relative;
-    }
-
-    #div3, #div4 {
-      width: 100%;
-      height: 100%;
-      display: flex;
       align-items: center;
-      justify-content: center;
-      transform-origin: center;
-      transform: scale(1);
     }
 
-    #div3 {
-      background-color: lightcoral;
-    }
-
-    #div4 {
-      background-color: lightyellow;
-    }
-
-    button {
-      padding: 10px;
-      font-size: 16px;
-      cursor: pointer;
+    .swiper-button-next, .swiper-button-prev {
+      color: #fff;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <div id="div1" class="box">
-    <button onclick="showDiv2()">Show Div 2</button>
-  </div>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Bird" alt="Bird"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/33FF57/FFFFFF?text=Lion" alt="Lion"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/5733FF/FFFFFF?text=Elephant" alt="Elephant"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/5733FF/FFFFFF?text=Elephant" alt="Elephant"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/5733FF/FFFFFF?text=Elephant" alt="Elephant"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/5733FF/FFFFFF?text=Elephant" alt="Elephant"></div>
+      <div class="swiper-slide"><img src="https://via.placeholder.com/600x400/5733FF/FFFFFF?text=Elephant" alt="Elephant"></div>
 
-  <div id="div2" class="box">
-    <div id="div3">
-      <h1>Div 3</h1>
+      <!-- Add more slides with actual image URLs as needed -->
     </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 
-  
-</div>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script>
-  function showDiv2() {
-    gsap.to("#div1", { y: "-100%", duration: 2, ease: "power2.inOut" });
-    gsap.to("#div2", { y: "0%", duration: 0.5, ease: "power2.inOut", onComplete: scaleDiv3 });
-  }
-
-  function scaleDiv3() {
-    gsap.to("#div3", { scale: 0.9, duration: 2, ease: "power2.inOut", delay: 2 });
-    initScrollMagic();
-  }
-
-  
-
-
-
-//   const lenis = new Lenis()
-
-// lenis.on('scroll', (e) => {
-//   console.log(e)
-// })
-
-// function raf(time) {
-//   lenis.raf(time)
-//   requestAnimationFrame(raf)
-// }
-
-// requestAnimationFrame(raf)
-</script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop:true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
 </body>
 </html>

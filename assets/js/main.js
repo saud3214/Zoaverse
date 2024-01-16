@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // GSAP scroll-triggered animation
     gsap.to("#pdiv2", {
-        scale: 0.8,
         duration: 3,
         delay:1,
 
@@ -105,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 gsap.registerPlugin(ScrollTrigger);
 
-let section1 = gsap.utils.toArray(".panel");
+let section1 = gsap.utils.toArray(".swipersec");
 
 gsap.to(section1, {
   xPercent: -100 * (section1.length - 1),
@@ -134,15 +133,154 @@ function scaleDiv3() {
   
  });
   gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50, });
-  gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:40, });
+  gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:10, });
 
   gsap.to(".roundpic", { duration: 2, delay: 2, borderRadius: "100px" });
   gsap.to(".roundvideo", { duration: 2, delay: 2, borderRadius: "100px" });
 
 }
 
-function showhed() {
-  gsap.to(".roundvideo", { duration: 2, delay: 5, borderRadius: "100px" });
+function showtxt() {
+  gsap.to("#textmain", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
 
 }
+
+gsap.to(".img1", {
+  y: 0,
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 90%",
+      end: "bottom 90%",
+      scrub: true,
+      ease:"power2.inOut",
+      duration:1,
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+gsap.to(".e1", {
+  y: -50,
+  rotation: -10, // Rotate 360 degrees during the animation
+  duration:1,
+
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top bottom",
+      end: "bottom 80%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+gsap.to(".s1", {
+  y: 0,
+  rotation: -360, // Rotate 360 degrees during the animation
+  duration:1,
+
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 90%",
+      end: "bottom 90%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+
+gsap.to(".e2", {
+  y: -20,
+  duration:2,
+  delay:2,
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 10%",
+      end: "bottom 90%",
+      scrub: true,
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+
+gsap.to(".asset-3", {
+  y: 10,
+  rotation: -10, // Rotate 360 degrees during the animation
+  duration:1,
+
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 80%",
+      end: "bottom 80%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+gsap.to(".asset-2", {
+  y: -100,
+  rotation: -10, // Rotate 360 degrees during the animation
+  duration:1,
+
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 80%",
+      end: "bottom 80%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+gsap.to(".c1", {
+  y: -50,
+  rotation: -10, // Rotate 360 degrees during the animation
+  duration:2,
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 50%",
+      end: "bottom 90%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+gsap.to(".c2", {
+  y: 20,
+  rotation: 10, // Rotate 360 degrees during the animation
+  duration:2,
+  delay:1,
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#d1",
+      start: "top 50%",
+      end: "bottom 90%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+
+
+gsap.to(".t1", {
+  opacity: 1,
+  y:  0,
+  duration: 2,
+  delay:2,
+  ease: "power2.inOut",
+  scrollTrigger: {
+    trigger: "#d1",
+    start: "top 40%",
+    end: "bottom 90%",
+    scrub: true,
+  },
+});
 
