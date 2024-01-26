@@ -114,7 +114,8 @@ gsap.to(section1, {
     pin: true,
     scrub: 1,
     snap: 1 / (section1.length - 1),
-    end: () => "+=" + document.querySelector(".container1").offsetWidth
+    end: () => "+=" + document.querySelector(".container1").offsetWidth,
+    
   }
 });
 
@@ -126,13 +127,13 @@ function showDiv2() {
 
 function scaleDiv3() {
   gsap.to("#textdiv", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
-  gsap.to("#div3", { scale: 0.85, duration: 2, ease: "power2.inOut", delay: 2,
+  gsap.to("#div3", { scale: 0.90, duration: 2, ease: "power2.inOut", delay: 2,
   // css: {
   //   clipPath: "polygon(50% 0, 58% 12%, 100% 12%, 100% 100%, 0 100%, 0 0)" // Only provide the styles, not the property name
   // } 
   
  });
-  gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50, });
+  gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2  });
   gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:10, });
 
   gsap.to(".roundpic", { duration: 2, delay: 2, borderRadius: "100px" });
@@ -160,7 +161,7 @@ gsap.to(".img1", {
 });
 
 gsap.to(".e1", {
-  y: -50,
+  y: -150,
   rotation: -10, // Rotate 360 degrees during the animation
   duration:1,
 
@@ -192,7 +193,7 @@ gsap.to(".s1", {
 
 
 gsap.to(".e2", {
-  y: -20,
+  y: -80,
   duration:2,
   delay:2,
   ease: "power2.inOut",
@@ -222,7 +223,7 @@ gsap.to(".asset-3", {
   },
 });
 gsap.to(".asset-2", {
-  y: -100,
+  y: 80,
   rotation: -10, // Rotate 360 degrees during the animation
   duration:1,
 
@@ -239,7 +240,7 @@ gsap.to(".asset-2", {
 
 gsap.to(".c1", {
   y: -50,
-  rotation: -10, // Rotate 360 degrees during the animation
+  rotation: -8, // Rotate 360 degrees during the animation
   duration:2,
   ease: "power2.inOut",
   scrollTrigger: {
@@ -284,3 +285,55 @@ gsap.to(".t1", {
   },
 });
 
+
+gsap.to("#card", {
+  y: 400,
+  duration:2,
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#div2",
+      start: "bottom 99%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+
+gsap.to(".updiv", {
+  y: 120,
+  duration:1,
+  ease: "power2.inOut",
+  scrollTrigger: {
+      trigger: "#div2",
+      start: "top 5%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+});
+// gsap.to(".movtext", {
+//   x: -800,
+//   duration:3,
+//   ease: "power2.inOut",
+//   scrollTrigger: {
+//     trigger: "horizntlswiper",
+//     start: "top 5%",
+//     scrub: true,
+//     ease:"power2.inOut",
+//     toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+// },
+// });
+
+
+gsap.to(".movtextar", {
+    x: 650,
+    duration:3,
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: "horizntlswiper",
+      start: "top 5%",
+      scrub: true,
+      ease:"power2.inOut",
+      toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
+  },
+  });
