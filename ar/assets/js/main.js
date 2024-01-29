@@ -240,7 +240,7 @@ gsap.to(".asset-2", {
 
 gsap.to(".c1", {
   y: -50,
-  rotation: -8, // Rotate 360 degrees during the animation
+  rotation: 8, // Rotate 360 degrees during the animation
   duration:2,
   ease: "power2.inOut",
   scrollTrigger: {
@@ -255,7 +255,7 @@ gsap.to(".c1", {
 
 gsap.to(".c2", {
   y: 20,
-  rotation: 10, // Rotate 360 degrees during the animation
+  rotation: -10, // Rotate 360 degrees during the animation
   duration:2,
   delay:1,
   ease: "power2.inOut",
@@ -300,7 +300,7 @@ gsap.to("#card", {
 });
 
 gsap.to(".updiv", {
-  y: 120,
+  y: 100,
   duration:1,
   ease: "power2.inOut",
   scrollTrigger: {

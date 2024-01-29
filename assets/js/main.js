@@ -300,7 +300,7 @@ gsap.to("#card", {
 });
 
 gsap.to(".updiv", {
-  y: 120,
+  y: 100,
   duration:1,
   ease: "power2.inOut",
   scrollTrigger: {
