@@ -172,11 +172,11 @@ span {
 }
 .c1,
 .img1 {
-    transform: translateY(500px);
-    -webkit-transform: translateY(500px);
-    -moz-transform: translateY(500px);
-    -ms-transform: translateY(500px);
-    -o-transform: translateY(500px);
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
 }
 .t1 {
     opacity: 0;
@@ -331,7 +331,6 @@ span {
     background: transparent;
     position: fixed;
     z-index: 1000;
-    padding: 30px;
     margin: auto;
     opacity: 0; /* Initially set opacity to 0 */
 }
@@ -427,7 +426,9 @@ span {
     text-transform: uppercase;
     cursor: pointer;
     margin-left: 0px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
 }
 @media screen and (max-width: 768px) {
@@ -435,7 +436,7 @@ span {
         width: 90%;
         background-color: white;
         color: #0c0c0c;
-        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 .p2h {
@@ -616,7 +617,7 @@ span {
 .slide3h {
     color: #f1f1f1;
     font-family: Montserrat;
-    font-size: 128px;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -700,16 +701,20 @@ span {
 
 .img2 {
     position: absolute;
-    width: 47px;
-    height: 47px;
-    top: 24%;
+    width: 40px;
+    height: 40px;
+    top: 30%;
     left: 6%;
     object-fit: cover;
 }
-
+@media screen and (max-width: 768px) {
+    .img2{
+        top: 24%;
+    }
+}
 .asset-3 {
     position: absolute;
-    width: 8%;
+    width: 7%;
     top: 40%;
     left: 10%;
     object-fit: cover;
@@ -717,8 +722,8 @@ span {
 }
 @media screen and (max-width: 768px) {
     .asset-3 {
-        width: 30%;
-        top: 37%;
+        width: 21%;
+        top: 40%;
         left: -8%;
     }
 }
@@ -730,7 +735,7 @@ span {
 }
 .asset-2 {
     position: absolute;
-    width: 8%;
+    width: 6%;
     top: 7%;
     left: 13%;
     object-fit: cover;
@@ -897,7 +902,7 @@ span {
 @media screen and (max-width: 768px) {
     .group {
         position: relative;
-        top: 5%;
+        top: 8%;
         left: 6%;
     }
 }
@@ -1030,14 +1035,20 @@ span {
 }
 .asset-x {
     position: absolute;
-    width: 9%;
+    width: 7%;
     top: 28%;
     left: 72%;
     object-fit: cover;
 }
+.btnclass{
+    background-color: #a09696;
+    &:hover{
+      background-color: white;
+    }
+  }
 .asset-x1 {
     position: absolute;
-    width: 6%;
+    width: 4%;
     top: 90%;
     left: 70%;
     object-fit: cover;
@@ -1045,14 +1056,14 @@ span {
 @media screen and (max-width: 768px) {
     .asset-x {
         width: 20%;
-        top: 24%;
+        top: 41%;
         left: 58%;
     }
 }
 @media screen and (max-width: 768px) {
     .asset-x1 {
         width: 15%;
-        top: 100%;
+        top: 80%;
         left: 12%;
     }
 }

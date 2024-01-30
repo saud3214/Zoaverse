@@ -13,7 +13,6 @@
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
         <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.css" />
     </head>
 
@@ -43,7 +42,7 @@
                                 <a class="nav-link active menubtn px-3 text-lg-center" aria-current="page" href="#">DOCS</a>
                             </li>
                         </ul>
-                        <a href="./ar/" class="langbtn px-3 ps-3" type="submit">
+                        <a href="./ar/" class="langbtn px-3 ps-3" >
                             <span>العربية</span>
                         </a>
                     </div>
@@ -75,7 +74,7 @@
                         <img id="roundpic" src="assets/images/videofront.png" class="roundpic" alt="gradient "  />
                         <div class="caption content container-fluid">
                             <div class="row cardntext">
-                                <div id="textdiv" class="col-lg-5 text-start d-flex flex-column textdiv">
+                                <div id="textdiv" class="col-lg-5 text-start d-flex flex-column textdiv gap-1 ">
                                     <span class="p2h">
                                         Oasis of Creativity
                                     </span>
@@ -116,7 +115,7 @@
                 <div id="pdiv2" class="main_div2">
                     <div class="updiv bg-white rounded-5 row overflow-hidden" style="scroll-snap-align: start; width: 90%; padding: 3%;">
                         <div class="row">
-                            <div class="col-xxl-4 order-lg-1 order-2 pt-4 pt-lg-0">
+                            <div class="col-xxl-4 order-lg-1 order-2 pt-2 pt-lg-0">
                                 <div class="row gap-lg-4 gap-2">
                                     <span class="p3h">
                                         CREATE. CONNECT. HOST. ZOAVERSE METAVERSE
@@ -155,7 +154,7 @@
                 <div class="swipersecw">
                     <div class="row d-flex align-items-start justify-content-start">
                         <div class="col-1"></div>
-                        <div id="horizntlswiper" class="col-6 text-start d-flex flex-column pt-5 movtext">
+                        <div id="horizntlswiper" class="col-8 text-start d-flex flex-column pt-5 movtext">
                             <span class="slide3f1">
                                 Why Choose
                             </span>
@@ -208,7 +207,7 @@
                                 </div>
                                 <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #e7bcfb;">
                                     <div class="d-flex flex-column align-items-start">
-                                        <div class="  " style="background-image: url(assets/images/Rectangle2.png); height: 200px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"></div>
+                                        <div  style="background-image: url(assets/images/Rectangle2.png); height: 200px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"></div>
 
                                         <div class="d-flex align-items-start text-start p-3">
                                             <div class="text-start">
@@ -239,8 +238,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next" style="top: 1%; left: 83%; background: white; color: black; width: 30px; height: 30px; border-radius: 50%;"></div>
-                        <div class="swiper-button-prev swiperbtnprev" style="top: 1%; background: white; color: black; border-radius: 50%; width: 30px; height: 30px;"></div>
+                        <div class="swiper-button-next btnclass " style="top: 1%; left: 83%;color: black; width: 30px; height: 30px; border-radius: 50%;"></div>
+                        <div class="swiper-button-prev swiperbtnprev btnclass" style="top: 1%;  color: black; border-radius: 50%; width: 30px; height: 30px;"></div>
                     </div>
                 </div>
             </div>
@@ -400,9 +399,9 @@
 
         <div class="main_divfooter d-flex flex-column gap-3 gap-lg-0" style="background-image: url('./assets/images/hamebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="row w-100 p-lg-5 d-flex flex-column flex-lg-row align-items-center gap-3 gap-lg-0">
-                <div class="col-lg-4 gap-5 d-flex flex-column justify-content-center ps-5">
+                <div class="col-lg-4 gap-lg-5 gap-2  d-flex flex-column justify-content-center ps-lg-5 ">
                     <img class="logo" src="assets/images/logo.svg" />
-                    <div class="gap-3 d-flex flex-lg-row flex-wrap align-items-center align-content-center justify-content-center">
+                    <div class="gap-3 d-flex flex-wrap flex-md-nowrap  align-items-center justify-content-center">
                         <span class="menubtnf px-lg-3 text-center">FEATURES</span>
                         <span class="menubtnf px-lg-3 text-center">Venues</span>
                         <span class="menubtnf px-lg-3 text-center">Avatar</span>
@@ -492,11 +491,13 @@
                         zoa@zoaverse.com
                     </span>
                 </div>
-                <div class="col-lg-4 d-flex flex-column align-items-start ps-lg-5 gap-3 p-lg-3 order-1">
+                <div class="col-lg-4 d-flex flex-column align-items-lg-center  ps-lg-5 gap-3 p-lg-3 order-1">
+                  <div class="d-flex  align-items-start w-75 "  >
                     <div class="text-white txtnl">Newsletter</div>
+                  </div>
                     <div class="d-flex flex-column align-items-star gap-2 w-75">
-                        <input type="email" id="email-input" placeholder="Email address" class="ps-3 border-0" style="border-radius: 30px; padding: 15px;" />
-                        <button id="animateButton3" class="button arrow d-flex ps-3 border-0" style="width: 100%; padding: 15px;">Subscribe</button>
+                        <input type="email" id="email-input" placeholder="Email address" class="ps-3 border-0" style="border-radius: 30px; padding: 15px;     font-family: 'Montserrat', sans-serif;                        " />
+                        <button id="animateButton3" class="button arrow d-flex ps-3 border-0" style="width: 100%; padding: 15px; font-family: 'Montserrat', sans-serif;">Subscribe</button>
                     </div>
                 </div>
             </div>
@@ -504,7 +505,7 @@
             <div class="row w-100 h-25">
                 <div class="container-fluid d-flex align-items-center justify-content-center">
                     <div class="bg-white rounded-top-4 d-flex p-2 pt-lg-3 align-items-center ps-5 pe-4 flex-column flex-lg-row" style="height: max-content; width: 90%;">
-                        <div class="d-flex col-lg-4 flex-wrap gap-lg-3 gap-2 privacytxt flex-lg-row a justify-content-center">
+                        <div class="d-flex col-lg-4  flex-wrap  gap-lg-3 gap-2 privacytxt flex-lg-row a justify-content-center">
                             <span> Terms Of Use</span>
                             <span> Privacy Policy</span>
                             <span> Contact us</span>

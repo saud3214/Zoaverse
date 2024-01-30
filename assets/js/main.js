@@ -151,7 +151,7 @@ gsap.to(".img1", {
   ease: "power2.inOut",
   scrollTrigger: {
       trigger: "#d1",
-      start: "top 90%",
+      start: "top 100%",
       end: "bottom 90%",
       scrub: true,
       ease:"power2.inOut",
@@ -255,9 +255,8 @@ gsap.to(".c1", {
 
 gsap.to(".c2", {
   y: 20,
-  rotation: 10, // Rotate 360 degrees during the animation
+  rotation: 15, // Rotate 360 degrees during the animation
   duration:2,
-  delay:1,
   ease: "power2.inOut",
   scrollTrigger: {
       trigger: "#d1",
