@@ -374,7 +374,9 @@ text-transform: uppercase;
     text-transform: uppercase;
     cursor: pointer;
     margin-left: 0px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
     
 }
@@ -476,7 +478,7 @@ text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .p3h {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
@@ -494,7 +496,7 @@ width: 60%;
 }
 @media screen and (max-width: 768px) {
   .downwrapper {
-    padding-top: 20px;
+    padding-top: 1px;
   }
 }
 .p3span{

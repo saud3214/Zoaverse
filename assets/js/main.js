@@ -1,14 +1,5 @@
 
 
-// document.getElementById('animateButton').addEventListener('click', function () {
-//     gsap.to('.main_div', { duration: 1, y: '-100%', ease: 'power2.out', onComplete: revealP2 });
-//   });
-
-//   function revealP2() {
-//     gsap.to('.p2', { duration: 1, display: 'block', opacity: 1, ease: 'power2.out' });
-//   }
-
-
 document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -43,62 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
       });
-
-
-// const header = document.querySelector('.header');
-//   const sections = document.querySelectorAll('.triganimation');
-
-//   // GSAP scroll-triggered animation
-//   gsap.timeline({
-//     opacity:1,
-//     scrollTrigger: {
-//       trigger: sections[1],
-//       start: 'top end',
-//       end: 'bottom end',
-//       y:100,
-//       toggleActions: 'play none none reverse'
-      
-//     }
-//   })
-//   .to(header, { duration: 2, opacity: 1, display: 'block',ease: 'power2.out' });
-
-//   // GSAP initial fade in animation
-//   gsap.to(header, { duration: 2, opacity: 1, ease: 'power2.out' });
-
-
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   gsap.registerPlugin(ScrollTrigger);
-
-  //   // GSAP scroll-triggered animation for the card
-  //   gsap.from(".card", {
-  //     y: 300, // Start from a lower position (off-screen)
-  //     opacity: 0, // Start with 0 opacity
-  //     duration: 2, // Animation duration
-  //     ease: "power2.out", // Easing function
-  //     scrollTrigger: {
-  //       trigger: ".card",
-  //       start: 'top 100%', // Adjust as needed based on when you want the animation to start
-  //       end: 'top center',
-  //       scrub: true
-  //     }
-  //   });
-  // });
-
-
-
-//   const lenis = new Lenis()
-
-// lenis.on('scroll', (e) => {
-//   console.log(e)
-// })
-
-// function raf(time) {
-//   lenis.raf(time)
-//   requestAnimationFrame(raf)
-// }
-
-// requestAnimationFrame(raf)
-
 
 
 
@@ -310,19 +245,6 @@ gsap.to(".updiv", {
       toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
   },
 });
-// gsap.to(".movtext", {
-//   x: -800,
-//   duration:3,
-//   ease: "power2.inOut",
-//   scrollTrigger: {
-//     trigger: "horizntlswiper",
-//     start: "top 5%",
-//     scrub: true,
-//     ease:"power2.inOut",
-//     toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
-// },
-// });
-
 
 gsap.to(".movtextar", {
     x: 650,
@@ -336,3 +258,75 @@ gsap.to(".movtextar", {
       toggleActions: "play none reverse none", // Reverse the animation when scrolling back up
   },
   });
+
+
+
+  swiper4 = new Swiper(".mySwiperarticle", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // autoplay: {
+    //     delay: 3000, // Delay in milliseconds between slides
+    // },
+    breakpoints: {
+        500: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        1232: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    },
+
+    speed: 3000, // Adjust the speed (in milliseconds)
+    effect: "slide",
+});
+
+
+swiper5 = new Swiper(".mySwiperarticle2", {
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination3",
+      clickable: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+      delay: 2000, // Delay in milliseconds between slide
+  },
+  breakpoints: {
+      300: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+      },
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+      },
+      1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+      },
+  },
+
+  speed: 3000, // Adjust the speed (in milliseconds)
+  effect: "slide",
+});
