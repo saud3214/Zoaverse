@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+gsap.to("#animateButton", { opacity: 1, duration: 1, delay: 3 }); // Adjust delay as needed
+
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -49,47 +51,83 @@ gsap.to(section1, {
   },
 });
 
-function showDiv2() {
-  gsap.to("#div1", { y: "-100%", duration: 2, ease: "power2.inOut" });
-  gsap.to("#div2", {
-    y: "0%",
-    duration: 0.5,
-    ease: "power2.inOut",
-    onComplete: scaleDiv3,
-  });
-}
 
 function scaleDiv3() {
   gsap.to("#textdiv", {
-    opacity: 1,
-    duration: 2,
-    ease: "power2.inOut",
-    delay: 2,
-    y: -50,
+      opacity: 1,
+      duration: 2,
+      ease: "power2.inOut",
+      y: -50,
+      scrub:0.5,
+      scrollTrigger: {
+          trigger: "#div2",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play reverse play reverse"
+      }
   });
-  gsap.to("#div3", { scale: 0.9, duration: 2, ease: "power2.inOut", delay: 2 });
-  gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut", delay: 2 });
+  gsap.to("#div3", {
+      scale: 0.90,
+      duration: 2,
+      ease: "power2.inOut",
+      scrollTrigger: {
+          trigger: "#div2",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play reverse play reverse"
+      }
+  });
+  gsap.to("#card", {
+      opacity: 1,
+      duration: 2,
+      ease: "power2.inOut",
+      scrollTrigger: {
+          trigger: "#div2",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play reverse play reverse"
+      }
+  });
   gsap.to("#header", {
-    opacity: 1,
-    duration: 2,
-    ease: "power2.inOut",
-    delay: 2,
-    y: 10,
+      opacity: 1,
+      duration: 2,
+      ease: "power2.inOut",
+      y: 10,
+      scrollTrigger: {
+          trigger: "#div2",
+          start: "top 80%",
+      }
   });
-
-  gsap.to(".roundpic", { duration: 2, delay: 2, borderRadius: "100px" });
-  gsap.to(".roundvideo", { duration: 2, delay: 2, borderRadius: "100px" });
-}
-
-function showtxt() {
-  gsap.to("#textmain", {
-    opacity: 1,
-    duration: 2,
-    ease: "power2.inOut",
-    delay: 2,
-    y: -50,
+  gsap.to(".roundpic", {
+      duration: 2,
+      ease: "power2.inOut",
+      borderRadius: "40px",
+      scrollTrigger: {
+          trigger: "#div2",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play reverse play reverse"
+      }
   });
-}
+  gsap.to(".roundvideo", {
+      duration: 2,
+      borderRadius: "40px",
+      scrollTrigger: {
+          trigger: "#div2",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play reverse play reverse"
+      }
+  });
+  }
+  
+  // Call the function initially
+  scaleDiv3();
+  function showtxt() {
+  gsap.to("#textmain", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
+  
+  }
+
 
 gsap.to(".img1", {
   y: 0,
@@ -312,10 +350,9 @@ swiper5 = new Swiper(".mySwiperarticle2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay: {
-    delay: 2000, // Delay in milliseconds between slide
-    reverseDirection: true, // This is the reverse option
-  },
+   autoplay: {
+     delay: 2000, // Delay in milliseconds between slide
+   },
   breakpoints: {
     300: {
       slidesPerView: 1,
@@ -330,7 +367,81 @@ swiper5 = new Swiper(".mySwiperarticle2", {
       spaceBetween: 50,
     },
   },
+  on: {
+    slideChangeTransitionEnd: function () {
+        swiper5.autoplay.stop(); // stop autoplay after the first transition
+        swiper5.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
+    },},
 
   speed: 3000, // Adjust the speed (in milliseconds)
   effect: "slide",
+});
+
+
+
+   
+document.getElementById('x1').addEventListener('mouseover', function() {
+  document.getElementById('x1').classList.add('hidden');
+  document.getElementById('x2').classList.remove('hidden');
+});
+
+document.getElementById('x2').addEventListener('mouseout', function() {
+  document.getElementById('x1').classList.remove('hidden');
+  document.getElementById('x2').classList.add('hidden');
+});
+
+
+document.getElementById('f1').addEventListener('mouseover', function() {
+  document.getElementById('f1').classList.add('hidden');
+  document.getElementById('f2').classList.remove('hidden');
+});
+
+document.getElementById('f2').addEventListener('mouseout', function() {
+  document.getElementById('f1').classList.remove('hidden');
+  document.getElementById('f2').classList.add('hidden');
+});
+
+document.getElementById('i1').addEventListener('mouseover', function() {
+  document.getElementById('i1').classList.add('hidden');
+  document.getElementById('i2').classList.remove('hidden');
+});
+
+document.getElementById('i2').addEventListener('mouseout', function() {
+  document.getElementById('i1').classList.remove('hidden');
+  document.getElementById('i2').classList.add('hidden');
+});
+
+
+document.getElementById('l1').addEventListener('mouseover', function() {
+  document.getElementById('l1').classList.add('hidden');
+  document.getElementById('l2').classList.remove('hidden');
+});
+
+document.getElementById('l2').addEventListener('mouseout', function() {
+  document.getElementById('l1').classList.remove('hidden');
+  document.getElementById('l2').classList.add('hidden');
+});
+
+
+document.getElementById('y1').addEventListener('mouseover', function() {
+  document.getElementById('y1').classList.add('hidden');
+  document.getElementById('y2').classList.remove('hidden');
+});
+
+document.getElementById('y2').addEventListener('mouseout', function() {
+  document.getElementById('y1').classList.remove('hidden');
+  document.getElementById('y2').classList.add('hidden');
+});
+
+
+
+
+document.getElementById('t1').addEventListener('mouseover', function() {
+  document.getElementById('t1').classList.add('hidden');
+  document.getElementById('t2').classList.remove('hidden');
+});
+
+document.getElementById('t2').addEventListener('mouseout', function() {
+  document.getElementById('t1').classList.remove('hidden');
+  document.getElementById('t2').classList.add('hidden');
 });

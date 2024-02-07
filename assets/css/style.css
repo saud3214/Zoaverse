@@ -51,6 +51,13 @@ h1, h2, h3,p,span {
     display: flex;
     clip-path: polygon(50% 0, 58% 12%, 100% 12%, 100% 100%, 0 100%, 0 0);
 }
+
+@media screen and (max-width: 768px) {
+  .gendiv {
+    clip-path: polygon(65% 0, 79% 7%, 100% 7%, 100% 100%, 0 100%, 0 0);
+
+  }
+}
 .textdiv{
     opacity: 0;
 }
@@ -70,7 +77,6 @@ h1, h2, h3,p,span {
     justify-content: center;
     display: flex;
    
-    background-color: black;
     gap: 10px;
     transition: transform 1s ease;
     /* Additional styles for the main container if needed */
@@ -81,7 +87,6 @@ h1, h2, h3,p,span {
   justify-content: center;
   display: flex;
   
-  background-color: black;
   gap: 10px;
   transition: transform 1s ease;
   /* Additional styles for the main container if needed */
@@ -92,7 +97,6 @@ h1, h2, h3,p,span {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: black;
   gap: 10px;
   transition: transform 1s ease;
   -webkit-transition: transform 1s ease;
@@ -143,8 +147,15 @@ rotate: -90deg;
 .p2{
     width: 100%;
     height: 100vh;
-    background-color: black;
 
+}
+.divpadding{
+    padding:3%;
+}
+@media screen and (max-width: 768px) {
+  .divpadding {
+      padding:0%;
+  }
 }
 
 .herosec {
@@ -268,7 +279,8 @@ text-transform: uppercase;
 
 
 .swipersecw{
-  width: 90%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header{
@@ -388,12 +400,15 @@ color: #0C0C0C;
 margin-left: 20px;
   }
 }
+.parent {
+  filter: url('#goo');
+}
 .p2h{
     color: #F1F1F1;
-font-size: 72px;
+font-size: 128px;
 font-style: normal;
 font-weight: 400;
-line-height: 100px; /* 93.75% */
+line-height: 120px; /* 93.75% */
 text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
@@ -412,6 +427,15 @@ line-height: normal;
 @media screen and (max-width: 768px) {
   .p2span {
     font-size: 14px;
+  }
+}
+.swiperoverflow{
+  overflow-x: visible !important;
+}
+
+@media screen and (max-width: 768px) {
+  .swiperoverflow {
+    overflow-x: hidden !important;
   }
 }
 .card{
@@ -448,12 +472,12 @@ line-height: normal;
 }
 @media screen and (min-width: 1100px) {
   .card {
-    width: 45%;
+    width: 60%;
 }
 }
 @media screen and (min-width: 1500px) {
   .card {
-    width: 37%;
+    width: 55%;
 }
 }
 .cardheading{
@@ -478,10 +502,14 @@ text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .p3h {
-    font-size: 30px;
+    font-size: 160%;
   }
 }
-
+@media screen and (max-width: 320px) {
+  .p3h {
+    font-size: 25px;
+  }
+}
 .btndown{
   width: 43%;
 }
@@ -490,7 +518,11 @@ text-transform: uppercase;
 width: 60%;
   }
 }
-
+@media screen and (max-width: 340px) {
+  .btndown {
+width: 70%;
+  }
+}
 .downwrapper{
   width: 100%;align-items: start;display: flex;justify-content: left; padding-top: 40px;
 }
@@ -557,8 +589,7 @@ line-height: normal;
 height: 100vh;
   display: flex;
 	flex-wrap: nowrap;
-    background-image: url('/assets/images/hamebg.png');
-    background-color: black;
+  
  align-items: center;
  justify-content: center;
 }
@@ -566,11 +597,16 @@ height: 100vh;
 .slide3h{
     color: #F1F1F1;
     font-family: Montserrat;
-    font-size: 80px;
+    font-size: 128px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .slide3h {
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slide3h {
@@ -696,29 +732,42 @@ line-height: normal;
 
 
 .swiper3 .swiperbtnprev{
-  left: 80%;
+  left: 83%;
+  top:1%;
+}
+.swiper3 .swiperbtnnext{
+  top: 1%; left: 83%;
 }
 @media screen and (max-width: 768px) {
   .swiper3 .swiperbtnprev{
     left: 72%;
+     top:5%;
   }
 }
-
+@media screen and (max-width: 768px) {
+  .swiper3 .swiperbtnnext{
+     top:5%;
+  }
+}
 .swiper2 .swiper2btnnext{
-  left: 61%;
+  left: 70%;
+  top: 80%;
    
 }
 @media screen and (max-width: 768px) {
   .swiper2 .swiper2btnnext{
-    left: 81%;
+    left: 52%;
+    top: 89.5% !important;
   }
 }
 .swiper2 .swiper2btnprev{
-  left: 57%; 
+  left: 66%; 
+  top: 80% !important;
 }
 @media screen and (max-width: 768px) {
   .swiper2 .swiper2btnprev{
-    left: 67% !important;
+    left: 36% !important;
+    top: 89.5% !important;
   }
 }
 
@@ -754,6 +803,12 @@ line-height: normal;
       top: 32%;
       left:81%;
 
+    }
+  }
+  .socialicon{
+    padding: 4%; width: 20%;
+    &:hover{
+      background: white;
     }
   }
   @media screen and (max-width: 768px) {
@@ -821,8 +876,8 @@ line-height: normal;
     }
   }
   .overlap-group-wrapper {
-    top: 59%;
-    left: 67%;
+    top: 65%;
+    left: 71%;
     position: absolute;
     
 }
@@ -834,8 +889,8 @@ line-height: normal;
 }
   .avatarsdk-band {
     position: absolute;
-    width: 50%;
-    left:26%;
+    width: 60%;
+    left:20%;
     top:10%;
     object-fit: cover;
   }
@@ -887,10 +942,9 @@ line-height: normal;
   @media screen and (max-width: 768px) {
     .picpading {
 position: relative;
-padding-top: 1%;
-width: 174%;
-left: -35%;
-
+padding-top: 10%;
+width: 100%;
+left: 0%;
     }
   }
 
@@ -907,7 +961,7 @@ left: -35%;
   
   @media screen and (min-width: 1500px) {
     .divpading {
-      padding-top: 50%;
+      padding-top: 55%;
   }
   }
   .we-work-hard-play {
@@ -1131,9 +1185,18 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 z-index: 1;
+width: 50%;
   }
+  @media screen and (max-width: 500px) {
+    .slidetext{
+      width: 98%;
+    }
+  }
+
   .swiper2 .swiper-button-next:after, .swiper-button-prev:after {
     font-size: 15px !important;
+      font-weight: 900  ;
+
 }
 .swiper3 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 15px !important;
@@ -1142,12 +1205,20 @@ z-index: 1;
   
 }
 .btnclass{
-  background-color: #a09696;
+  background-color: #c2c2c2;
+  opacity: 0.8;
+  &:hover{
+    background-color: white;
+    opacity: 1;
+
+  }
+}
+.btnclass2{
+  background-color: #F1F1F1;
   &:hover{
     background-color: white;
   }
 }
-
 .txtfs{
   color: #F1F1F1;
 text-align: center;
@@ -1204,3 +1275,73 @@ line-height: normal;
 text-transform: uppercase;
 
 }
+
+
+.divemail{
+  width: 75%;
+}
+@media screen and (max-width: 500px) {
+  .divemail {
+    width: 100%;
+       }
+}
+
+
+.hidden{
+  display: none;
+ 
+}
+
+.swiper2 .swiper-slide.swiper-slide-active {
+  width: 900px !important;
+} 
+@media screen and (max-width: 500px) {
+  .swiper2 .swiper-slide.swiper-slide-active {
+    width: 100% !important;
+  } 
+}
+
+/* Apply a black overlay to the next and previous slides */
+.swiper2 .swiper-slide + .swiper-slide::after,
+.swiper2 .swiper-slide ~ .swiper-slide::after {
+  content: "";
+  position: absolute;    
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+ 
+}
+
+/* Ensure that the active slide is not affected */
+.swiper2 .swiper-slide.swiper-slide-active,
+.swiper2 .swiper-slide.swiper-slide-active::after {
+  filter: none;
+  background-color: transparent;
+}
+.swiper2 .swiper-wrapper {
+  display: flex;
+  margin-left: -10%;
+}
+
+@media screen and (max-width: 500px) {
+  .swiper2 .swiper-wrapper {
+    margin-left: 0%;
+  }
+}
+
+.tpcwh{
+    height: 80px; width: 90%;
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+    .tpcwh {
+      height: 120px ;width: 90%;
+  
+    }
+  }
+

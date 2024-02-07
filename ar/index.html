@@ -16,10 +16,10 @@
 
     </head>
 
-    <body>
+    <body style="background-image: url('./assets/images/bg2.jpg'); background-size: cover; background-position: center;  background-attachment: fixed;  ">
         <section id="header" class="header container-fluid" dir="rtl">
             <nav class="navbar navbar-expand-lg bg-transparent px-lg-5">
-                <div class="container-fluid">
+                <div class="container-fluid ps-lg-5 pe-lg-5 pt-lg-3">
                     <a class="navbar-brand" href="#"> <img class="logo" src="assets/images/Logo.Ar.svg" alt="brand logo"/> </a>
                     <div style="background-color: #085dff; padding: 10px; border-radius: 20px;" class="d-lg-none">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,9 +49,8 @@
                 </div>
             </nav>
         </section>
-        <div class="container2">
-            <div id="div1" class="box" dir="rtl">
-                <div class="main_div triganimation" style="background-image: url('./assets/images/hamebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div id="div1"  dir="rtl">
+                <div class="main_div triganimation">
                     <div class="herosec">
                         <div>
                             <img class="logo" src="assets/images/Logo.Ar.svg " alt="logo" />
@@ -60,12 +59,13 @@
                             يكشف النقاب عن أعجوبة الشرق الأوسط المتعددة
                         </span>
                         <div style="width: 100%; align-items: center; display: flex; justify-content: center;">
-                            <button id="animateButton" onclick="showDiv2()" class="button arrow border-0 loginbtnw">تسجيل الدخول</button>
+                            <button id="animateButton" class="button arrow border-0 loginbtnw" style="opacity: 0;">تسجيل الدخول</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="div2" class="p2 triganimation box" style="background-image: url('./assets/images/bg2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+            <div id="div2" class="p2 triganimation ">
                 <div id="div3" dir="rtl">
                     <div id="videoDiv" class="video-container gendiv flex-column">
                         <video id="roundvideo" class="roundvideo" autoplay muted loop playsinline>
@@ -74,7 +74,7 @@
                         <img id="roundpic" src="assets/images/videofront.png" class="roundpic" alt=" gradient " />
                         <div class="caption content container-fluid">
                             <div class="row cardntext">
-                                <div id="textdiv" class="col-lg-5 text-end d-flex flex-column textdiv gap-3">
+                                <div id="textdiv" class="col-lg-5 text-end d-flex flex-column textdiv gap-5">
                                     <span class="p2h">
                                         واحة من الإبداع
                                     </span>
@@ -83,7 +83,18 @@
                                         للتواصل مع الآخرين
                                     </span>
                                 </div>
-                                <div class="col-lg-7 d-flex align-items-end justify-content-center">
+
+                                <div class=" w-100  align-self-end  d-flex  align-items-center  justify-content-end pe-5 d-lg-none    ">
+                                    <div class="row "> 
+                                        <div class="  eclip d-inline">
+                                        <img src="./assets/images/Ellipse3.png" height="10px">
+
+                                        <img src="./assets/images/Ellipse2.png" height="10px">
+                                        <img src="./assets/images/Ellipse2.png" height="10px">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-flex align-items-end justify-content-center">
                                     <div id="card" class="card p-3">
                                         <div class="card-body">
                                             <div class="row d-flex align-items-center justify-content-center border-1 border-bottom border-opacity-25 pb-4 mb-4">
@@ -101,14 +112,23 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-2 align-items-end  d-lg-flex d-none    " >
+                                    <div class="row"> <div class="  eclip d-inline">
+                                        <img src="./assets/images/Ellipse3.png" height="10px">
+
+                                        <img src="./assets/images/Ellipse2.png" height="10px">
+                                        <img src="./assets/images/Ellipse2.png" height="10px">
+                                    </div>
+                                    <p class=" text-white" id="content2">واحة من الأبداع</p></div>
+                                                    
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container1" style="background-image: url('./assets/images/hamebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container1" >
             <div class="swipersec" dir="rtl">
                 <div id="pdiv2" class="main_div2">
                     <div class="updiv bg-white rounded-5 row overflow-hidden" style="scroll-snap-align: start; width: 90%; padding: 3%;">
@@ -146,10 +166,10 @@
                     </div>
                 </div>
             </div>
-            <div class="swipersec d-flex flex-column align-items-center">
+            <div class="swipersec d-flex flex-column ">
                 <div class="swipersecw">
                     <div class="row d-flex align-items-start justify-content-end">
-                        <div id="horizntlswiper" class="col-8 text-end d-flex flex-column pt-5 movtext pe-md-4 gap-2">
+                        <div id="horizntlswiper" class="col-8 text-end d-flex flex-column pt-5 movtext  gap-2">
                             <span class="slide3f1">
                                 لماذا تختار
                             </span>
@@ -161,17 +181,19 @@
                     </div>
 
                     <div class="pt-5 position-relative swiper3">
-                        <div class="swiper mySwiperarticle" style="height: 80%; width: 82%;">
+                        <div class="swiper mySwiperarticle swiperoverflow  " style="height: 80%; width: 90%; direction: rtl;">
                             <!-- Set your desired width and height here -->
                             <div id="horizntlswiper2" class="swiper-wrapper h-100">
+                               
+
                                 <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #6bd2d7;">
-                                    <div class="d-flex flex-column align-items-end">
+                                    <div class="d-flex flex-column align-items-lg-start align-items-end  ">
                                         <div
                                             class="relative bg-cover bg-center"
-                                            style="background-image: url(./assets/images/Rectangle3.png); height: 200px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
+                                            style="background-image: url(./assets/images/Rectangle3.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                         ></div>
 
-                                        <div class="d-flex align-items-start text-end p-3">
+                                        <div class="d-flex align-items-lg-start align-items-end text-start p-3">
                                             <span class="swipertitle"> متاحة على أجهزة الكمبيوتر وتطبيقات الهاتف</span>
                                         </div>
                                         <span class="swiperpara text-end pe-3 pb-2">
@@ -180,31 +202,31 @@
                                     </div>
                                 </div>
 
-                                <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #97b3ff;" dir="rtl">
+                                
+                                <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #97b3ff;">
                                     <div class="d-flex flex-column align-items-start">
                                         <div
                                             class="relative bg-cover bg-center"
-                                            style="background-image: url(assets/images/Rectangle0.png); height: 200px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
+                                            style="background-image: url(assets/images/Rectangle0.png); height: 250px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                         ></div>
 
-                                        <div class="d-flex align-items-start p-3">
-                                            <div class="text-start">
-                                                <span class="swipertitle" > التصميمات الفريدة</span>
-                                            </div>
+                                        <div class="d-flex align-items-lg-start align-items-end text-start p-3">
+                                            <span class="swipertitle" > التصميمات الفريدة</span>
                                         </div>
                                         <span class="swiperpara text-end pe-3 pb-2">
                                             مجموعة واسعة من المساحات المختلفه عالية الجودة بتصميمات حديثة تجعل تجربة الميتافيرس أكثر تفردًا لتخدم الشركات و الأفراد و تمكنهم من إنشاء ما يناسب تجمعاتهم الإفتراضية
                                         </span>
                                     </div>
                                 </div>
+
                                 <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #6bd2d7;">
-                                    <div class="d-flex flex-column align-items-end">
+                                    <div class="d-flex flex-column align-items-lg-start align-items-end  ">
                                         <div
                                             class="relative bg-cover bg-center"
-                                            style="background-image: url(./assets/images/Rectangle3.png); height: 200px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
+                                            style="background-image: url(./assets/images/Rectangle3.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                         ></div>
 
-                                        <div class="d-flex align-items-start text-end p-3">
+                                        <div class="d-flex align-items-lg-start align-items-end text-start p-3">
                                             <span class="swipertitle"> متاحة على أجهزة الكمبيوتر وتطبيقات الهاتف</span>
                                         </div>
                                         <span class="swiperpara text-end pe-3 pb-2">
@@ -212,40 +234,41 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #e7bcfb;" dir="rtl">
-                                    <div class="d-flex flex-column align-items-start">
-                                        <div class="  " style="background-image: url(assets/images/Rectangle2.png); height: 200px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"></div>
+                                
 
-                                        <div class="d-flex align-items-start text-start p-3">
-                                            <div class="text-start">
-                                                <span class="swipertitle"> دعم اللغة العربية</span>
-                                            </div>
+                                <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #e7bcfb;">
+                                    <div class="d-flex flex-column align-items-start">
+                                        <div  style="background-image: url(assets/images/Rectangle2.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"></div>
+
+                                        <div class="d-flex align-items-lg-start align-items-end text-start p-3">
+                                            <span class="swipertitle"> دعم اللغة العربية</span>
                                         </div>
-                                        <span class="text-end swiperpara pe-3 pb-2"> واجهة مرنة وسهلة تدعم اللغة العربية كلغة أساسية بجانب لغات أخرى لتسهل على المستخدمين العرب التنقل داخلها </span>
+                                        <span class="text-end swiperpara pe-3   pb-2">
+                                            واجهة مرنة وسهلة تدعم اللغة العربية كلغة أساسية بجانب لغات أخرى لتسهل على المستخدمين العرب التنقل داخلها 
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next btnclass" style="top: 1%; left: 15%;  color: black; width: 30px; height: 30px; border-radius: 50%;"></div>
-                        <div class="swiper-button-prev swiperbtnprev btnclass" style="top: 1%; color: black; border-radius: 50%; width: 30px; height: 30px;"></div>
+                        <div class="swiper-button-next swiperbtnnext btnclass" style="  color: black; width: 50px; height: 50px; border-radius: 50%;"></div>
+                        <div class="swiper-button-prev swiperbtnprev btnclass" style=" color: black; border-radius: 50%; width: 50px; height: 50px;"></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="d1" class="main_divlast position-relative d-flex align-items-center" style="background-image: url('./assets/images/hamebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-            <div class="pt-lg-5 pb-3 bg-white rounded-4 d-flex text-center justify-content-center" style="height: 68%; width: 90%; border-radius: 40px; background: linear-gradient(180deg, #a6a5a5 0%, #f1f1f1 38.9%); margin-top: 10%;">
+        <div id="d1" class="main_divlast position-relative d-flex align-items-center" >
+            <div class="pt-lg-5 pb-3 bg-white rounded-4 d-flex text-center justify-content-center align-items-end " style="height: 80%; width: 90%; border-radius: 40px; background: linear-gradient(180deg, #a6a5a5 0%, #f1f1f1 38.9%); margin-top: 10%;">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <img class="avatarsdk-band img1" src="assets/images/AvatarSDK_Band_Transp-Neutral-wGlasees-1024x576 1.png" alt="people avatar" />
-                    <div class="p-5 pt-5"></div>
-                    <div class="div-3 t1">
+                    <div class="div-3 t1 pb-3 ">
                         <p class="we-work-hard-play">عبر عن نفسك بشخصيتك الإفتراضية الخاصة</p>
                         <p class="p">
                             توفر زوافيرس مجموعة واسعة من المساحات القابلة للتعديل والتي تجعل من السهل البدء في عالم الميتافيرس ببضع نقرات فقط
                         </p>
                     </div>
 
-                    <div class="group c1 d-block d-lg-none">
+                    <div class="group c1 d-none  d-lg-block ">
                         <div class="overlap-group-2">
                             <div class="rectangle"></div>
                             <div class="rectangle-2"></div>
@@ -260,7 +283,22 @@
                         </div>
                     </div>
 
-                    <div class="overlap-group-wrapper c2 d-block d-lg-none">
+                    <div class="group d-block d-lg-none">
+                        <div class="overlap-group-2">
+                            <div class="rectangle"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="div-2">
+                                <div class="text-wrapper">الهوية الفريدة</div>
+                                <p class="p">
+                                    اختر شخصيتك الإفتراضية الخاصة أو قم باستخدم الذكاء الإصطناعي لجعلها نسختك الإفتراضية المطابقة لك
+                                </p>
+                            </div>
+                            <div class="ellipse"></div>
+                            <img class="vector s1" src="assets/images/Vector.png" />
+                        </div>
+                    </div>
+
+                    <div class="overlap-group-wrapper  d-block d-lg-none">
                         <div class="overlap-group-2">
                             <div class="rectangle-3"></div>
                             <div class="rectangle-2c"></div>
@@ -274,22 +312,10 @@
                             <img class="smile-circle-svgrepo" src="assets/images/smile-circle-svgrepo-com 1.png" alt="smile emoji" />
                         </div>
                     </div>
+                    
                 </div>
 
-                <div class="group c1 d-none d-lg-block">
-                    <div class="overlap-group-2">
-                        <div class="rectangle"></div>
-                        <div class="rectangle-2"></div>
-                        <div class="div-2">
-                            <div class="text-wrapper">الهوية الفريدة</div>
-                            <p class="p">
-                                اختر شخصيتك الإفتراضية الخاصة أو قم باستخدم الذكاء الإصطناعي لجعلها نسختك الإفتراضية المطابقة لك
-                            </p>
-                        </div>
-                        <div class="ellipse"></div>
-                        <img class="vector s1" src="assets/images/Vector.png" alt="star " />
-                    </div>
-                </div>
+                
             </div>
             <img class="asset-x e1" src="assets/images/Asset 5@4x 1.png" />
             <img class="asset-x1 e2" src="assets/images/Asset 10@4x 1.png" />
@@ -314,32 +340,34 @@
             <img class="img2" src="assets/images/Asset 8@4x 1.png" alt=" emojiback" />
         </div>
 
-        <div class="main_div" style="background-image: url('./assets/images/hamebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-            <div class="swiper mySwiperarticle2 swiper2" style="height: 80%; width: 80%;">
+        <div class="main_div position-relative swiper2" >
+            <div class="swiper mySwiperarticle2 " style="height: 80%; width: 90%;">
                 <!-- Set your desired width and height here -->
                 <div class="swiper-wrapper h-100">
                     <div class="swiper-slide h-100 rounded-5">
                         <div class="container-fluid d-flex align-items-center h-100" style="background-image: url(./assets/images/bgimg2.png); background-position: center; background-size: cover; border-radius: 40px;">
                             <div class="row h-100 d-flex align-items-end justify-content-end pb-5 ps-1" style="border-radius: 40px; background: linear-gradient(0deg, #085dff 13.75%, rgba(8, 93, 255, 0) 39.24%); width: 100vw;">
-                                <div class="text-end d-flex flex-column gap-1" style="width: 90%;">
+                                <div class="text-end d-flex flex-column gap-1 align-items-lg-end pe-lg-4  " >
                                     <span class="slideheding">
                                         ردهة
                                     </span>
-                                    <div>
-                                        <span class="slidetext">
+                                        <span class="slidetext text-end ">
                                           مساحة مفتوحة للجميع تفتح المجال للتعارف و مشاركة التجارب م والاكتشافات و تعزز التفاعل وتوسيع الشبكة الاجتماعية لدى المستخدمين.
                                         </span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide h-100 rounded-5">
                         <div class="container-fluid d-flex align-items-center h-100" style="background-image: url(./assets/images/bgimg1.png); background-position: center; background-size: cover; border-radius: 40px;">
-                            <div class="row h-100 d-flex align-items-end pb-5 ps-1 justify-content-end" style="border-radius: 40px; background: linear-gradient(0deg, #085dff 13.75%, rgba(8, 93, 255, 0) 39.24%);">
-                                <div class="text-end d-flex flex-column gap-1" style="width: 90%;">
-                                    <span class="slideheding"> مساحة مفتوحة </span>
-                                    <span class="slidetext"> مساحة مستوحاة من خيالك، يمكنك إنشاؤها وتكوينها وفقًا لتوقعاتك وأهدافك وتزويدها بجميع الكماليات المتاحة. </span>
+                            <div class="row h-100 d-flex align-items-end pb-5 ps-1 justify-content-end" style="border-radius: 40px; background: linear-gradient(0deg, #085dff 13.75%, rgba(8, 93, 255, 0) 39.24%); width:100vw">
+                                
+                                <div class="text-end d-flex flex-column gap-1 align-items-lg-end  pe-lg-4 " >
+                                    <span class="slideheding">
+                                        مساحة مفتوحة                                     </span>
+                                        <span class="slidetext">
+                                            مساحة مستوحاة من خيالك، يمكنك إنشاؤها وتكوينها وفقًا لتوقعاتك وأهدافك وتزويدها بجميع الكماليات المتاحة.
+                                        </span>
                                 </div>
                             </div>
                         </div>
@@ -347,21 +375,19 @@
                     <div class="swiper-slide h-100 rounded-5">
                         <div class="container-fluid d-flex align-items-center h-100" style="background-image: url(./assets/images/bgimg2.png); background-position: center; background-size: cover; border-radius: 40px;">
                             <div class="row h-100 d-flex align-items-end pb-5 ps-1 justify-content-end" style="border-radius: 40px; background: linear-gradient(0deg, #085dff 13.75%, rgba(8, 93, 255, 0) 39.24%); width: 100vw;">
-                                <div class="text-end d-flex flex-column gap-1" style="width: 90%;">
+                                <div class="text-end d-flex flex-column gap-1 align-items-lg-end  pe-lg-4 " >
                                     <span class="slideheding">
                                         ردهة
                                     </span>
-                                    <div>
                                         <span class="slidetext"> يوفر Zoaverse مجموعة واسعة من الأماكن القابلة للتخصيص والتي تجعل من السهل البدء في metaverse ببضع نقرات فقط. </span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide h-100 rounded-5">
                         <div class="container-fluid d-flex align-items-center h-100" style="background-image: url(./assets/images/bgimg3.png); background-position: center; background-size: cover; border-radius: 40px;">
-                            <div class="row h-100 d-flex align-items-end pb-5 ps-1 justify-content-end" style="border-radius: 40px; background: linear-gradient(0deg, #085dff 13.75%, rgba(8, 93, 255, 0) 39.24%);">
-                                <div  class="text-end d-flex flex-column gap-1" style="width: 90%;">
+                            <div class="row h-100 d-flex align-items-end pb-5 ps-1 justify-content-end" style="border-radius: 40px; background: linear-gradient(0deg, #085dff 13.75%, rgba(8, 93, 255, 0) 39.24%);  width: 100vw;">
+                                <div  class="text-end d-flex flex-column gap-1 align-items-lg-end  pe-lg-4 " >
                                     <span class="slideheding"> معرض فني </span>
                                     <span class="slidetext"> يوفر Zoaverse مجموعة واسعة من الأماكن القابلة للتخصيص والتي تجعل من السهل البدء في metaverse ببضع نقرات فقط. </span>
                                 </div>
@@ -369,14 +395,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next swiper2btnnext " style="top: 95%; background: white; width: 35px; height: 35px; border-radius: 50%;"></div>
-                <div class="swiper-button-prev swiper2btnprev" style="top: 95%; background: white; border-radius: 50%; width: 35px; height: 35px;"></div>
+               
             </div>
+            <div class="swiper-button-next swiper2btnnext btnclass " style="  width: 50px; height: 50px; border-radius: 50%;"></div>
+            <div class="swiper-button-prev swiper2btnprev btnclass" style="border-radius: 50%; width: 50px; height: 50px;"></div>
         </div>
 
-        <div class="main_divfooter d-flex flex-column gap-3 gap-lg-0" style="background-image: url('./assets/images/hamebg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="main_divfooter d-flex flex-column gap-3 gap-lg-0" >
             <div class="row w-100 p-lg-5 d-flex flex-column flex-lg-row align-items-center gap-3 gap-lg-0" dir="rtl">
-                <div class="col-lg-4 gap-5 d-flex flex-column justify-content-center pe-5">
+                <div class="col-lg-4 gap-5 d-flex flex-column justify-content-center pe-lg-5  align-items-center align-items-lg-start ">
                     <img class="logo" src="assets/images/Logo.Ar.svg" alt="logo" />
                     <div class="gap-3 d-flex flex-lg-row flex-wrap align-items-center align-content-center justify-content-center">
                         <span class="menubtnf px-lg-3 text-center">المميزات</span>
@@ -388,29 +415,36 @@
                 <div class="col-lg-4 d-flex gap-4 flex-column align-items-center justify-content-center order-2 order-lg-1">
                     <span class="text-white txtfs"> تواصل معنا </span>
                     <div class="d-flex gap-3 align-items-center justify-content-center">
-                        <div class="bg- rounded-5 d-flex align-items-center justify-content-center" style="padding: 6%; width: 30%;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
+                        <div id="f1" class="rounded-5  socialicon" >
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 25" fill="none" opacity='0.75'>
                                 <path
                                     d="M10.9375 5.46875C10.6944 5.46875 10.3993 5.5816 10.0521 5.80729C9.70486 6.03299 9.53125 6.37153 9.53125 6.82292V8.17708H13.6458V13.5938H9.53125V24.5313H4.11458V13.5938H0V8.17708H4.11458V5.46875C4.11458 4.77431 4.27083 4.09722 4.58333 3.4375C4.89583 2.77778 5.33854 2.19618 5.91146 1.69271C6.48438 1.18924 7.15278 0.78125 7.91667 0.46875C8.68056 0.15625 9.51389 0 10.4167 0H15V5.46875H10.9375Z"
                                     fill="#F1F1F1"
                                 />
                             </svg>
+
+                            
+                        </div>
+                        <div id="f2" class="rounded-5 hidden socialicon" >
+
+                        <svg   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15 25" fill="none" class="">
+                            <path
+                                d="M10.9375 5.46875C10.6944 5.46875 10.3993 5.5816 10.0521 5.80729C9.70486 6.03299 9.53125 6.37153 9.53125 6.82292V8.17708H13.6458V13.5938H9.53125V24.5313H4.11458V13.5938H0V8.17708H4.11458V5.46875C4.11458 4.77431 4.27083 4.09722 4.58333 3.4375C4.89583 2.77778 5.33854 2.19618 5.91146 1.69271C6.48438 1.18924 7.15278 0.78125 7.91667 0.46875C8.68056 0.15625 9.51389 0 10.4167 0H15V5.46875H10.9375Z"
+                                fill="black"
+                            />
+                        </svg>
                         </div>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
-                            <g clip-path="url(#clip0_1_1804)">
-                                <path
-                                    d="M0.0585144 0.043457L9.32465 12.1298L0 21.9565H2.0986L10.2623 13.3531L16.8584 21.9565H24L14.2125 9.19033L22.8918 0.043457H20.7932L13.2748 7.96705L7.20014 0.043457H0.0585144ZM3.14467 1.55144H6.42555L20.9134 20.4483H17.6325L3.14467 1.55144Z"
-                                    fill="#F1F1F1"
-                                />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_1_1804">
-                                    <rect width="24" height="21.913" fill="white" transform="translate(0 0.043457)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <div id="x1" class=" rounded-5 socialicon " >
+                            <img class="" src="assets/images/xicon.svg" />
+                        </div>
+                        <div id="x2" class=" rounded-5  socialicon hidden" >
+                            <img class="" src="assets/images/xiconb.svg" />
+                        </div>
+
+                        <div id="i1" class="bg- rounded-5  socialicon" >
+
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" opacity='0.75'>
                             <path
                                 fill-rule="evenodd"
                                 clip-rule="evenodd"
@@ -424,8 +458,31 @@
                                 d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
                                 fill="#F1F1F1"
                             />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        </svg>                    
+                    
+                        </div>
+
+                    <div  id="i2" class=" rounded-5 hidden  socialicon" >
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                            fill="black"
+                        />
+                        <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#F1F1F1" />
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                            fill="black"
+                        />
+                    </svg>
+                    </div>
+
+                        <div id="l1" class="bg- rounded-5  socialicon" >
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" opacity='0.75'>
                             <g clip-path="url(#clip0_1_1811)">
                                 <path
                                     fill-rule="evenodd"
@@ -439,8 +496,33 @@
                                     <rect width="24" height="24" fill="white" />
                                 </clipPath>
                             </defs>
-                        </svg>
+                        </svg> 
+                    </div>
+
+                    <div id="l2" class="bg- rounded-5 hidden socialicon" >
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_1_1811)">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M24 24H19.2V15.6012C19.2 13.2972 18.1836 12.0117 16.3608 12.0117C14.3772 12.0117 13.2 13.3512 13.2 15.6012V24H8.4V8.4H13.2V10.1543C13.2 10.1543 14.706 7.51172 18.0996 7.51172C21.4944 7.51172 24 9.58333 24 13.8697V24ZM2.9304 5.90508C1.3116 5.90508 0 4.58275 0 2.95195C0 1.32235 1.3116 0 2.9304 0C4.548 0 5.85959 1.32235 5.85959 2.95195C5.8608 4.58275 4.548 5.90508 2.9304 5.90508ZM0 24H6V8.4H0V24Z"
+                                    fill="black"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_1811">
+                                    <rect width="24" height="24" fill="black" />
+                                </clipPath>
+                            </defs>
+                        </svg> 
+                    </div>
+
+                       
+
+                    <div   id="y1" class=" rounded-5  socialicon" >
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" opacity='0.75'>
                             <g clip-path="url(#clip0_1_1816)">
                                 <path
                                     fill-rule="evenodd"
@@ -455,32 +537,64 @@
                                 </clipPath>
                             </defs>
                         </svg>
+                    
+                    </div>
+                    <div  id="y2" class="rounded-5 hidden socialicon" >
+
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_1_1816)">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M9.58613 15.1033V8.36913C11.9768 9.49405 13.8283 10.5807 16.0181 11.7523C14.212 12.754 11.9768 13.8779 9.58613 15.1033ZM22.9092 5.01992C22.4968 4.4766 21.794 4.05368 21.0457 3.91367C18.8463 3.49601 5.12518 3.49482 2.92698 3.91367C2.32693 4.02615 1.7926 4.29805 1.3336 4.7205C-0.600435 6.51558 0.00559941 16.142 0.471777 17.7014C0.667809 18.3763 0.921228 18.8631 1.24038 19.1826C1.65157 19.605 2.21456 19.8959 2.86123 20.0264C4.67214 20.4009 14.0016 20.6104 21.0074 20.0826C21.6529 19.9701 22.2243 19.6699 22.6749 19.2295C24.4631 17.4416 24.3412 7.27454 22.9092 5.01992Z"
+                                    fill="black"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_1816">
+                                    <rect width="24" height="24" fill="black" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    
+                    </div>
+                        <div id="t1" class="bg- rounded-5  socialicon" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" opacity='0.75'>
                             <path
                                 d="M12.4919 0.771802C13.7196 0.753052 14.9384 0.762802 16.1564 0.753052C16.1969 2.2763 16.8149 3.6473 17.7981 4.6628L17.7966 4.6613C18.8549 5.61455 20.2319 6.23255 21.7499 6.33755L21.7709 6.33905V10.1161C20.3369 10.0801 18.9884 9.7493 17.7726 9.1808L17.8341 9.2063C17.2461 8.92355 16.7489 8.6333 16.2764 8.3093L16.3154 8.3348C16.3064 11.0716 16.3244 13.8083 16.2966 16.5353C16.2194 17.9251 15.7574 19.1926 15.0164 20.2508L15.0314 20.2276C13.7924 22.0021 11.7854 23.1668 9.50313 23.2358H9.49263C9.40038 23.2403 9.29163 23.2425 9.18213 23.2425C7.88463 23.2425 6.67188 22.8811 5.63838 22.2533L5.66838 22.2705C3.78738 21.1388 2.48988 19.2023 2.24988 16.9501L2.24688 16.9193C2.22813 16.4506 2.21913 15.9818 2.23788 15.5228C2.60538 11.9386 5.60838 9.1658 9.25863 9.1658C9.66888 9.1658 10.0709 9.20105 10.4616 9.2678L10.4196 9.2618C10.4384 10.6486 10.3821 12.0361 10.3821 13.4228C10.0649 13.3081 9.69888 13.2413 9.31713 13.2413C7.91613 13.2413 6.72438 14.1368 6.28338 15.3871L6.27663 15.4096C6.17688 15.7298 6.11913 16.0981 6.11913 16.4791C6.11913 16.6336 6.12888 16.7866 6.14688 16.9366L6.14538 16.9186C6.39438 18.4531 7.70988 19.6111 9.29613 19.6111C9.34188 19.6111 9.38688 19.6103 9.43188 19.608H9.42513C10.5224 19.5751 11.4749 18.9848 12.0134 18.1126L12.0209 18.0991C12.2211 17.8201 12.3584 17.4825 12.4041 17.1158L12.4049 17.1053C12.4986 15.4276 12.4611 13.7596 12.4701 12.0818C12.4791 8.3048 12.4611 4.5368 12.4889 0.769552L12.4919 0.771802Z"
                                 fill="#F1F1F1"
                             />
                         </svg>
+                        </div>
+
+                        <div id="t2" class=" rounded-5 hidden socialicon" >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M12.4919 0.771802C13.7196 0.753052 14.9384 0.762802 16.1564 0.753052C16.1969 2.2763 16.8149 3.6473 17.7981 4.6628L17.7966 4.6613C18.8549 5.61455 20.2319 6.23255 21.7499 6.33755L21.7709 6.33905V10.1161C20.3369 10.0801 18.9884 9.7493 17.7726 9.1808L17.8341 9.2063C17.2461 8.92355 16.7489 8.6333 16.2764 8.3093L16.3154 8.3348C16.3064 11.0716 16.3244 13.8083 16.2966 16.5353C16.2194 17.9251 15.7574 19.1926 15.0164 20.2508L15.0314 20.2276C13.7924 22.0021 11.7854 23.1668 9.50313 23.2358H9.49263C9.40038 23.2403 9.29163 23.2425 9.18213 23.2425C7.88463 23.2425 6.67188 22.8811 5.63838 22.2533L5.66838 22.2705C3.78738 21.1388 2.48988 19.2023 2.24988 16.9501L2.24688 16.9193C2.22813 16.4506 2.21913 15.9818 2.23788 15.5228C2.60538 11.9386 5.60838 9.1658 9.25863 9.1658C9.66888 9.1658 10.0709 9.20105 10.4616 9.2678L10.4196 9.2618C10.4384 10.6486 10.3821 12.0361 10.3821 13.4228C10.0649 13.3081 9.69888 13.2413 9.31713 13.2413C7.91613 13.2413 6.72438 14.1368 6.28338 15.3871L6.27663 15.4096C6.17688 15.7298 6.11913 16.0981 6.11913 16.4791C6.11913 16.6336 6.12888 16.7866 6.14688 16.9366L6.14538 16.9186C6.39438 18.4531 7.70988 19.6111 9.29613 19.6111C9.34188 19.6111 9.38688 19.6103 9.43188 19.608H9.42513C10.5224 19.5751 11.4749 18.9848 12.0134 18.1126L12.0209 18.0991C12.2211 17.8201 12.3584 17.4825 12.4041 17.1158L12.4049 17.1053C12.4986 15.4276 12.4611 13.7596 12.4701 12.0818C12.4791 8.3048 12.4611 4.5368 12.4889 0.769552L12.4919 0.771802Z"
+                                    fill="black"
+                                />
+                            </svg>
+                            </div>
                     </div>
-                    <span class="text-white emailtxt">
+                    <span class="text-white emailtxt opacity-75 ">
                         zoa@zoaverse.com
                     </span>
                 </div>
-                <div class="col-lg-4 d-flex flex-column align-items-lg-center  ps-lg-5 gap-3 p-lg-3 order-1">
-                    <div >
-                    <div class="text-white txtnl">النشرة البريدية</div>
+                <div class="col-lg-4 d-flex flex-column align-items-center  ps-lg-5 gap-3 p-lg-3 order-1">
+                    <div class="d-flex  align-items-start w-75 justify-content-center  justify-content-lg-start    "  >
+                        <div class="text-white txtnl">النشرة البريدية</div>
                     </div>
-                    <div class="d-flex flex-column align-items-star gap-2 w-75">
-                        <input type="email" id="email-input" placeholder="البريد الاليكتروني" class="ps-3 border-0" style="border-radius: 30px; padding: 15px;" />
-                        <button id="animateButton3" class="button arrow d-flex ps-3 border-0" style="width: 100%; padding: 15px;">البريد الاليكتروني</button>
+                    <div class="d-flex flex-column align-items-star gap-2 divemail ">
+                        <input type="email" id="email-input" placeholder="البريد الاليكتروني" class="pe-5 border-0" style="border-radius: 30px; padding: 15px;" />
+                        <button id="animateButton3" class="button arrow d-flex pe-5 border-0" style="width: 100%; padding: 15px;">البريد الاليكتروني</button>
                     </div>
                 </div>
             </div>
 
             <div class="row w-100 h-25" dir="rtl">
                 <div class="container-fluid d-flex align-items-end justify-content-center">
-                    <div class="bg-white rounded-top-4 d-flex p-2 pt-lg-3 align-items-center ps-5 pe-4 flex-column flex-lg-row" style="height: max-content; width: 90%;">
-                        <div class="d-flex col-lg-4 flex-wrap gap-lg-3 gap-2 privacytxt flex-lg-row a justify-content-center">
+                    <div class="bg-white rounded-top-4 d-flex   align-items-center ps-4 flex-column flex-lg-row tpcwh pe-lg-5 pe-4  " >
+                        <div class="d-flex col-lg-4 text-center  flex-wrap  gap-lg-3 gap-2 privacytxt flex-lg-row ps-lg-5  p-3 p-lg-0 justify-content-center  justify-content-lg-start gap-3 gap-lg-0   ">
                             <span> الشروط والاحكام</span>
                             <span> سياسه الخصوصيه </span>
                             <span>تواصل معنا</span>
