@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden;">
     <head>
         <title>Zoaverse</title>
         <meta charset="utf-8" />
@@ -13,13 +13,13 @@
         <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/ZEGdQLM/7ba936b34824fefdccfe2c6d9f0b740b.css" />
     </head>
 
-    <body style="background-image: url('./assets/images/bg2.jpg'); background-size: cover; background-position: center;  background-attachment: fixed;  ">
+    <body style="background-image: url('./assets/images/bg2.jpg'); background-size: cover; background-position: left;  background-attachment: fixed;  ">
         
         <section id="header" class="header container-fluid">
             <nav class="navbar navbar-expand-lg bg-transparent px-lg-5 ">
                 <div class="container-fluid ps-lg-5 pe-lg-5 pt-lg-3">
                     <a class="navbar-brand" href="#"> <img class="logo" src="assets/images/logo.svg" alt="logo" /> </a>
-                    <div style="background-color: #085dff; padding: 10px; border-radius: 20px;" class="d-lg-none">
+                    <div style="background-color: #085dff; padding: 10px; border-radius: 6px;" class="d-lg-none">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -48,7 +48,7 @@
             </nav>
         </section>
 
-        <div id="div1" class="" >
+        <div id="div1" class="boxq" >
             <div class="main_div triganimation"  >
                 <div class="herosec">
                     <div>
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-            <div id="div2" class="p2 triganimation box" >
+            <div id="div2" class="p2 triganimation box box_parent" >
                 <div id="div3">
                     <div id="videoDiv" class="video-container gendiv flex-column">
                         <video id="roundvideo" class="roundvideo" autoplay muted loop preload="yes" playsinline>
@@ -96,8 +96,8 @@
                                 <div class="col-lg-5 d-flex align-items-end justify-content-center">
                                     <div id="card" class="card p-3">
                                         <div class="card-body">
-                                            <div class="row d-flex align-items-center justify-content-center border-1 border-bottom border-opacity-25 pb-4 mb-4">
-                                                <div class="col-6 d-flex flex-column gap-2">
+                                            <div class="row d-flex align-items-center justify-content-center border-1 border-bottom border-opacity-25 pb-4 mb-4  mx-lg-1">
+                                                <div class="col-6 d-flex flex-column gap-2 align-items-start p-lg-0">
                                                     <span class="cardheading">
                                                         5000+
                                                     </span>
@@ -105,7 +105,7 @@
                                                         Online Users
                                                     </span>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-6 d-flex justify-content-end p-lg-0">
                                                     <img src="assets/images/users.svg" style="width: 75px; height: 75px;" class="card-img-top" alt="users logo" />
                                                 </div>
                                             </div>
@@ -114,27 +114,30 @@
                                     </div>
                                 </div>
                                 <div class="col-2 align-items-end  d-lg-flex d-none    " >
-                                    <div class="row"> <div class="  eclip d-inline">
+                                    <div class="row gap-3 pe-lg-5"> 
+                                    <div class="  eclip d-flex align-items-end justify-content-end gap-2  ">
                                         <img src="./assets/images/Ellipse3.png" height="10px">
 
                                         <img src="./assets/images/Ellipse2.png" height="10px">
                                         <img src="./assets/images/Ellipse2.png" height="10px">
                                     </div>
+                                    <div class="d-flex align-items-end justify-content-end ">  
                                     <p class=" text-white" id="content2">lorem ipsum dolor sit amit</p></div>
-                                                    
+                                       </div>             
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <svg style="visibility: hidden;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
-                    <defs>
-                          <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
-                              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                              <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                          </filter>
-                      </defs>
-                  </svg>
+                <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="flt_tag">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+                    <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
             </div>
 
             <div class="container1" >
@@ -180,7 +183,7 @@
                 <div class="swipersec d-flex flex-column">
                     <div class="swipersecw">
                         <div class="row d-flex align-items-start justify-content-start">
-                            <div class="col-1"></div>
+                            <div style="width:5%;"></div>
                             <div id="horizntlswiper" class="col-8 text-start d-flex flex-column pt-5 movtext">
                                 <span class="slide3f1"> 
                                     Why Choose
@@ -205,7 +208,7 @@
                                                 style="background-image: url(./assets/images/Rectangle3.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                             ></div>
     
-                                            <div class="d-flex align-items-lg-start align-items-end text-start p-3">
+                                            <div class="d-flex align-self-end text-start p-3">
                                                 <span class="swipertitle"> Cross Platform</span>
                                             </div>
                                             <span class="swiperpara text-start ps-3 pb-2">
@@ -265,7 +268,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-button-next btnclass " style="top: 1%; left: 86%;color: black; width: 50px; height: 50px; border-radius: 50%;"></div>
+                            <div class="swiper-button-next  swiperbtnnext btnclass " style="top: 1%; color: black; width: 50px; height: 50px; border-radius: 50%;"></div>
                             <div class="swiper-button-prev swiperbtnprev btnclass" style="top: 1%;  color: black; border-radius: 50%; width: 50px; height: 50px;"></div>
                         </div>
                     </div>

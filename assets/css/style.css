@@ -400,8 +400,16 @@ color: #0C0C0C;
 margin-left: 20px;
   }
 }
-.parent {
-  filter: url('#goo');
+.flt_svg {
+  visibility: hidden; 
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+
+.box_parent
+{
+  filter: url('#flt_tag');
 }
 .p2h{
     color: #F1F1F1;
@@ -472,20 +480,18 @@ line-height: normal;
 }
 @media screen and (min-width: 1100px) {
   .card {
-    width: 60%;
+    width: 55%;
 }
 }
 @media screen and (min-width: 1500px) {
   .card {
-    width: 55%;
+    width: 46%;
 }
 }
 .cardheading{
     color: #F1F1F1;
-leading-trim: both;
-text-edge: cap;
 font-family: Montserrat;
-font-size: 34px;
+font-size: 40px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -732,21 +738,22 @@ line-height: normal;
 
 
 .swiper3 .swiperbtnprev{
-  left: 83%;
+  left: 88%;
   top:1%;
 }
 .swiper3 .swiperbtnnext{
-  top: 1%; left: 83%;
+  top: 1%; left: 92% ;
 }
 @media screen and (max-width: 768px) {
   .swiper3 .swiperbtnprev{
-    left: 72%;
-     top:5%;
+    left: 66%;
+    top:5%;
   }
 }
 @media screen and (max-width: 768px) {
   .swiper3 .swiperbtnnext{
      top:5%;
+      left: 80% !important;
   }
 }
 .swiper2 .swiper2btnnext{
@@ -924,8 +931,6 @@ line-height: normal;
     color: #1e1e1e;
     font-size: 16px;
     text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
   }
   .picpading{
     padding-top: 32%;
@@ -1289,7 +1294,6 @@ text-transform: uppercase;
 
 .hidden{
   display: none;
- 
 }
 
 .swiper2 .swiper-slide.swiper-slide-active {

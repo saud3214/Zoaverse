@@ -56,25 +56,7 @@ scrollTrigger: {
 
 gsap.to("#animateButton", { opacity: 1, duration: 1, delay: 3 }); // Adjust delay as needed
 
-// function showDiv2() {
-//   gsap.to("#div1", { y: "-100%", duration: 2, ease: "power2.inOut" });
-//   gsap.to("#div2", { y: "0%", duration: 0.5, ease: "power2.inOut", onComplete: scaleDiv3 });
-// }
 
-
-// function scaleDiv3() {
-//   gsap.to("#textdiv", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
-//   gsap.to("#div3", { scale: 0.90, duration: 2, ease: "power2.inOut", delay: 2,
-//   // css: {
-//   //   clipPath: "polygon(50% 0, 58% 12%, 100% 12%, 100% 100%, 0 100%, 0 0)" // Only provide the styles, not the property name
-//   // } 
-
-//  });
-//   gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2  });
-//   gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:10, });
-
-//   gsap.to(".roundpic", { duration: 2, delay: 2, borderRadius: "100px" });
-//   gsap.to(".roundvideo", { duration: 2, delay: 2, borderRadius: "100px" });
 function scaleDiv3() {
 gsap.to("#textdiv", {
     opacity: 1,
@@ -331,22 +313,6 @@ gsap.to(".movtextar", {
 
 
 
-
-// const div1 = document.getElementById("div1");
-//   const div2 = document.getElementById("div2");
-
-
-//   ScrollTrigger.create({
-//     trigger: div2,
-//     ease: "power2.inOut",
-//     start: "bottom 70%", // Trigger animation when top of div2 touches bottom of viewport
-//     end: "bottom bottom", // Trigger animation when bottom of div2 touches top of viewport
-//     onEnter: () => {
-//       div1.classList.add("hidden"); 
-//     },
-//   });
-
-
 swiper4 = new Swiper(".mySwiperarticle", {
   loop: true,
   pagination: {
@@ -495,4 +461,9 @@ document.getElementById('t1').addEventListener('mouseover', function() {
 document.getElementById('t2').addEventListener('mouseout', function() {
     document.getElementById('t1').classList.remove('hidden');
     document.getElementById('t2').classList.add('hidden');
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.to(document.documentElement, { duration: 1, delay: 3, css: { overflow: 'auto' } });
 });
