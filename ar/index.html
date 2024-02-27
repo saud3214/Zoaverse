@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div id="div2" class="p2 triganimation ">
+            <div id="div2" class="p2 triganimation  box_parent">
                 <div id="div3" dir="rtl">
                     <div id="videoDiv" class="video-container gendiv flex-column">
                         <video id="roundvideo" class="roundvideo" autoplay muted loop playsinline>
@@ -112,6 +112,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-2 align-items-end  d-lg-flex d-none    " >
                                     <div class="row"> <div class="  eclip d-inline">
                                         <img src="./assets/images/Ellipse3.png" height="10px">
@@ -122,10 +123,20 @@
                                     <p class=" text-white" id="content2">واحة من الأبداع</p></div>
                                                     
                                 </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="flt_tag">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="flt_tag" />
+                            <feComposite in="SourceGraphic" in2="flt_tag" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
             </div>
 
         <div class="container1" >

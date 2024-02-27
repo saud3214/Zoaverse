@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+.box_parent
+{
+  filter: url('#flt_tag');
+}
 h1,
 h2,
 h3,
