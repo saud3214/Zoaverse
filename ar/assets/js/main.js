@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-gsap.to("#animateButton", { opacity: 1, duration: 1, delay: 3 }); // Adjust delay as needed
 
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
@@ -52,81 +51,35 @@ gsap.to(section1, {
 });
 
 
+
+function showDiv2() {
+  gsap.to("#div1", { y: "-100%", duration: 2, ease: "power2.inOut" });
+  gsap.to(document.documentElement, { duration: 1, delay: 2, css: { overflow: 'auto' } ,ease: "power2.inOut"});
+
+  gsap.to("#div2", { y: "0%", duration: 0.5, ease: "power2.inOut", onComplete: scaleDiv3 });
+  
+}
+
 function scaleDiv3() {
-  gsap.to("#textdiv", {
-      opacity: 1,
-      duration: 2,
-      ease: "power2.inOut",
-      y: -50,
-      scrub:0.5,
-      scrollTrigger: {
-          trigger: "#div2",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play reverse play reverse"
-      }
+  gsap.to(".roundvideo", { duration: 1, delay: 1, borderRadius: "40px", onComplete: showdivs });
+  gsap.to("#textdiv", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
+  gsap.to("#nevdots", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,});
+  gsap.to("#div3", { scale: 0.90, duration: 2, ease: "power2.inOut", delay: 2,});
+  gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2  });
+  gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:10, });
+  gsap.to(".roundpic", { duration: 2, delay: 2, borderRadius: "40px" });  
+}
+// Call the function initially
+function showtxt() {
+gsap.to("#textmain", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
+
+}
+
+function showdivs() {
+  document.addEventListener("DOMContentLoaded", function() {
+      gsap.to(document.documentElement, { duration: 1, delay: 1, css: { overflow: 'auto' } });
   });
-  gsap.to("#div3", {
-      scale: 0.90,
-      duration: 2,
-      ease: "power2.inOut",
-      scrollTrigger: {
-          trigger: "#div2",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play reverse play reverse"
-      }
-  });
-  gsap.to("#card", {
-      opacity: 1,
-      duration: 2,
-      ease: "power2.inOut",
-      scrollTrigger: {
-          trigger: "#div2",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play reverse play reverse"
-      }
-  });
-  gsap.to("#header", {
-      opacity: 1,
-      duration: 2,
-      ease: "power2.inOut",
-      y: 10,
-      scrollTrigger: {
-          trigger: "#div2",
-          start: "top 80%",
-      }
-  });
-  gsap.to(".roundpic", {
-      duration: 2,
-      ease: "power2.inOut",
-      borderRadius: "40px",
-      scrollTrigger: {
-          trigger: "#div2",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play reverse play reverse"
-      }
-  });
-  gsap.to(".roundvideo", {
-      duration: 2,
-      borderRadius: "40px",
-      scrollTrigger: {
-          trigger: "#div2",
-          start: "top 80%",
-          end: "bottom 20%",
-          toggleActions: "play reverse play reverse"
-      }
-  });
-  }
-  
-  // Call the function initially
-  scaleDiv3();
-  function showtxt() {
-  gsap.to("#textmain", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:-50,});
-  
-  }
+}
 
 
 gsap.to(".img1", {

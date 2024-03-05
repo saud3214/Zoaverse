@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" style="overflow: hidden;" >
     <head>
         <title>زوافيرس</title>
         <meta charset="utf-8" />
@@ -49,8 +49,11 @@
                 </div>
             </nav>
         </section>
-            <div id="div1"  dir="rtl">
-                <div class="main_div triganimation">
+
+        <div class="container2 ">  
+
+            <div id="div1" class="box position-fixed  top-0 "  dir="rtl"  style="z-index:100;" >
+                <div class="main_div triganimation" style="background-image: url('./assets/images/bg2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                     <div class="herosec">
                         <div>
                             <img class="logo" src="assets/images/Logo.Ar.svg " alt="logo" />
@@ -59,7 +62,7 @@
                             يكشف النقاب عن أعجوبة الشرق الأوسط المتعددة
                         </span>
                         <div style="width: 100%; align-items: center; display: flex; justify-content: center;">
-                            <button id="animateButton" class="button arrow border-0 loginbtnw" style="opacity: 0;">تسجيل الدخول</button>
+                            <button id="animateButton" onclick="showDiv2()" class="button arrow border-0 loginbtnw">تسجيل الدخول</button>
                         </div>
                     </div>
                 </div>
@@ -97,14 +100,14 @@
                                 <div class="col-lg-5 d-flex align-items-end justify-content-center">
                                     <div id="card" class="card p-3">
                                         <div class="card-body">
-                                            <div class="row d-flex align-items-center justify-content-center border-1 border-bottom border-opacity-25 pb-4 mb-4">
-                                                <div class="col-6 d-flex flex-column gap-2">
+                                            <div class="row d-flex align-items-center justify-content-center border-1 border-bottom border-opacity-25 pb-4 mb-4 mx-lg-1">
+                                                <div class="col-6 d-flex flex-column gap-2 align-items-start p-0">
                                                     <span class="cardheading">
                                                         5000+
                                                     </span>
                                                     <span class="text-uppercase"> مستخدمين حاليين </span>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-6 d-flex  justify-content-end p-0  ">
                                                     <img src="assets/images/users.svg" style="width: 75px; height: 75px;" class="card-img-top" alt="users logo" />
                                                 </div>
                                             </div>
@@ -114,13 +117,13 @@
                                 </div>
 
                                 <div class="col-2 align-items-end  d-lg-flex d-none    " >
-                                    <div class="row"> <div class="  eclip d-inline">
+                                    <div class="row"> <div class="  eclip d-flex justify-content-end  gap-1 ">
                                         <img src="./assets/images/Ellipse3.png" height="10px">
 
                                         <img src="./assets/images/Ellipse2.png" height="10px">
                                         <img src="./assets/images/Ellipse2.png" height="10px">
                                     </div>
-                                    <p class=" text-white" id="content2">واحة من الأبداع</p></div>
+                                    <p class=" text-white d-flex justify-content-end " id="content2">واحة من الأبداع</p></div>
                                                     
                                 </div>
 
@@ -138,13 +141,13 @@
                     </defs>
                 </svg>
             </div>
-
+            </div>
         <div class="container1" >
             <div class="swipersec" dir="rtl">
                 <div id="pdiv2" class="main_div2">
                     <div class="updiv bg-white rounded-5 row overflow-hidden" style="scroll-snap-align: start; width: 90%; padding: 3%;">
                         <div class="row">
-                            <div class="col-xxl-4 order-lg-1 order-2 pt-4 pt-lg-0">
+                            <div class="col-lg-4 order-lg-1 order-2 pt-4 pt-lg-0">
                                 <div class="row gap-lg-4 gap-2">
                                     <span class="p3h">
                                         استضف .أنشئ . تواصل داخل زوافيرس
@@ -201,7 +204,7 @@
                                     <div class="d-flex flex-column align-items-lg-start align-items-end  ">
                                         <div
                                             class="relative bg-cover bg-center"
-                                            style="background-image: url(./assets/images/Rectangle3.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
+                                            style="background-image: url(./assets/images/Rectangle3.png); height: 30vh; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                         ></div>
 
                                         <div class="d-flex align-items-lg-start align-items-end text-start p-3">
@@ -218,7 +221,7 @@
                                     <div class="d-flex flex-column align-items-start">
                                         <div
                                             class="relative bg-cover bg-center"
-                                            style="background-image: url(assets/images/Rectangle0.png); height: 250px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
+                                            style="background-image: url(assets/images/Rectangle0.png); height: 25vh; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                         ></div>
 
                                         <div class="d-flex align-items-lg-start align-items-end text-start p-3">
@@ -234,7 +237,7 @@
                                     <div class="d-flex flex-column align-items-lg-start align-items-end  ">
                                         <div
                                             class="relative bg-cover bg-center"
-                                            style="background-image: url(./assets/images/Rectangle3.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
+                                            style="background-image: url(./assets/images/Rectangle3.png); height: 30vh; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"
                                         ></div>
 
                                         <div class="d-flex align-items-lg-start align-items-end text-start p-3">
@@ -249,7 +252,7 @@
 
                                 <div class="swiper-slide" style="padding: 10px; border-radius: 30px; background-color: #e7bcfb;">
                                     <div class="d-flex flex-column align-items-start">
-                                        <div  style="background-image: url(assets/images/Rectangle2.png); height: 300px; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"></div>
+                                        <div  style="background-image: url(assets/images/Rectangle2.png); height: 25vh; width: 100%; border-radius: 30px; background-position: center; background-size: cover;"></div>
 
                                         <div class="d-flex align-items-lg-start align-items-end text-start p-3">
                                             <span class="swipertitle"> دعم اللغة العربية</span>
