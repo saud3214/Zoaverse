@@ -60,7 +60,6 @@ scrollTrigger: {
 function showDiv2() {
     gsap.to("#div1", { y: "-100%", duration: 2, ease: "power2.inOut" });
     gsap.to(document.documentElement, { duration: 1, delay: 2, css: { overflow: 'auto' } ,ease: "power2.inOut"});
-
     gsap.to("#div2", { y: "0%", duration: 0.5, ease: "power2.inOut", onComplete: scaleDiv3 });
     
   }
@@ -71,7 +70,7 @@ function showDiv2() {
     gsap.to("#nevdots", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,});
     gsap.to("#div3", { scale: 0.90, duration: 2, ease: "power2.inOut", delay: 2,});
     gsap.to("#card", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2  });
-    gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:10, });
+    gsap.to("#header", { opacity: 1, duration: 2, ease: "power2.inOut" ,delay:2 ,y:20, });
     gsap.to(".roundpic", { duration: 2, delay: 2, borderRadius: "40px" });  
   }
 // Call the function initially
@@ -89,7 +88,7 @@ function showdivs() {
 
 
 gsap.to(".img1", {
-y: -120,
+y: 20,
 ease: "power2.inOut",
 scrollTrigger: {
     trigger: "#d1",
@@ -283,9 +282,9 @@ swiper4 = new Swiper(".mySwiperarticle", {
   },
  
   breakpoints: {
-      500: {
+      300: {
           slidesPerView: 1,
-          spaceBetween: 10,
+          spaceBetween: 20,
       },
       768: {
           slidesPerView: 2,
@@ -322,12 +321,12 @@ navigation: {
     prevEl: ".swiper-button-prev",
 },
 autoplay: {
-    delay: 2000, // Delay in milliseconds between slide
+    delay: 3000, // Delay in milliseconds between slide
 },
 breakpoints: {
     300: {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 20,
     },
     768: {
         slidesPerView: 2,
@@ -338,11 +337,6 @@ breakpoints: {
         spaceBetween: 40,
     },
 },
-on: {
-    slideChangeTransitionEnd: function () {
-        swiper5.autoplay.stop(); // stop autoplay after the first transition
-        swiper5.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
-    },},
 
 speed: 3000, // Adjust the speed (in milliseconds)
 effect: "slide",
@@ -352,17 +346,18 @@ effect: "slide",
 
   
     
-document.getElementById('x1').addEventListener('mouseover', function() {
-    document.getElementById('x1').classList.add('hidden');
-    document.getElementById('x2').classList.remove('hidden');
+document.addEventListener('DOMContentLoaded', function() {
+    const x1 = document.getElementById('x1');
+    const x2 = document.getElementById('x2');
+    x1.addEventListener('mouseover', function() {
+        x1.classList.add('hidden');
+        x2.classList.remove('hidden');
+    });
+    x2.addEventListener('mouseout', function() {
+        x1.classList.remove('hidden');
+        x2.classList.add('hidden');
+    });
 });
-
-document.getElementById('x2').addEventListener('mouseout', function() {
-    document.getElementById('x1').classList.remove('hidden');
-    document.getElementById('x2').classList.add('hidden');
-});
-
-
 document.getElementById('f1').addEventListener('mouseover', function() {
     document.getElementById('f1').classList.add('hidden');
     document.getElementById('f2').classList.remove('hidden');
@@ -418,4 +413,19 @@ document.getElementById('t2').addEventListener('mouseout', function() {
     document.getElementById('t2').classList.add('hidden');
 });
 
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var toggleButton = document.getElementsByClassName('navbar-toggler')[0]; 
+    var myDiv = document.getElementById('hedblur');
+
+    toggleButton.addEventListener('click', function() {
+        if (myDiv.style.display === 'none') {
+            myDiv.style.display = 'block';
+        } else {
+            myDiv.style.display = 'none';
+        }
+    });
+});
 

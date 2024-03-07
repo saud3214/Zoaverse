@@ -25,8 +25,30 @@ span {
     font-family: "Almarai", sans-serif !important;
     /* Add additional styling for headings if needed */
 }
+
+.hmrgin{
+    margin-right: 15%;
+  }
+  @media screen and (max-width: 1600px) {
+    .hmrgin {
+      margin-right: 9%;
+    }
+  }
+  @media screen and (max-width: 1350px) {
+    .hmrgin {
+      margin-right: 6%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .hmrgin {
+      margin-right: 0%;
+    }
+  }
 .navbar {
     background: #fff;
+    background: #fff;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 .navbar .navbar-nav .nav-link {
     color: #ffffff;
@@ -34,6 +56,11 @@ span {
 .btn-outline-dark {
     border-radius: 0;
 }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding-left: 0%;
+      padding-right: 0%;
+    }}
 .btn-outline-dark:focus {
     box-shadow: none;
 }
@@ -233,7 +260,7 @@ span {
 }
 
 .loginbtnw {
-    width: 15%;
+    width: 17%;
 }
 
 @media screen and (max-width: 768px) {
