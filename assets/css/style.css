@@ -167,7 +167,7 @@ rotate: -90deg;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1300px) and (max-width:1600px) {
   .divpading {
     padding-top: 35%;
 }
@@ -579,7 +579,7 @@ text-transform: uppercase;
 }
 @media screen and (max-width: 768px) {
   .btndown {
-width: 60%;
+width: 65%;
   }
 }
 @media screen and (max-width: 340px) {
@@ -1016,9 +1016,9 @@ line-height: normal;
   @media screen and (max-width: 768px) {
     .picpading {
 position: relative;
-padding-top: 10%;
+padding-top: 15%;
 width: 120%;
-left: 0%;
+left: -7%;
     }
   }
 

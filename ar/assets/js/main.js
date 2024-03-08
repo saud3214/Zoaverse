@@ -83,7 +83,7 @@ function showdivs() {
 
 
 gsap.to(".img1", {
-  y: 0,
+  y: 40,
   ease: "power2.inOut",
   scrollTrigger: {
     trigger: "#d1",
@@ -270,7 +270,7 @@ swiper4 = new Swiper(".mySwiperarticle", {
     reverseDirection: true, // This is the reverse option
   },
   breakpoints: {
-    500: {
+    300: {
       slidesPerView: 1,
       spaceBetween: 10,
     },
@@ -320,11 +320,11 @@ swiper5 = new Swiper(".mySwiperarticle2", {
       spaceBetween: 50,
     },
   },
-  on: {
-    slideChangeTransitionEnd: function () {
-        swiper5.autoplay.stop(); // stop autoplay after the first transition
-        swiper5.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
-    },},
+  // on: {
+  //   slideChangeTransitionEnd: function () {
+  //       swiper5.autoplay.stop(); // stop autoplay after the first transition
+  //       swiper5.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
+  //   },},
 
   speed: 3000, // Adjust the speed (in milliseconds)
   effect: "slide",
@@ -397,4 +397,18 @@ document.getElementById('t1').addEventListener('mouseover', function() {
 document.getElementById('t2').addEventListener('mouseout', function() {
   document.getElementById('t1').classList.remove('hidden');
   document.getElementById('t2').classList.add('hidden');
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var toggleButton = document.getElementsByClassName('navbar-toggler')[0]; 
+  var myDiv = document.getElementById('hedblur');
+
+  toggleButton.addEventListener('click', function() {
+      if (myDiv.style.display === 'none') {
+          myDiv.style.display = 'block';
+      } else {
+          myDiv.style.display = 'none';
+      }
+  });
 });
