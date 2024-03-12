@@ -205,15 +205,23 @@ span {
         height: auto;
     }
 }
-.c1,
-.img1 {
-    transform: translateY(-30px);
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
+.c1, .img1 {
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
 }
-.t1 {
+  @media screen and (max-width: 768px) {
+    .img1 {
+      transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -o-transform: translateY(-100px);
+  }
+  }
+.t1,.bgsw1{
     opacity: 0;
 }
 .e2 {
@@ -791,7 +799,7 @@ line-height: normal;
 .asset-3 {
     position: absolute;
     width: 7%;
-    top: 40%;
+    top: 35%;
     left: 10%;
     object-fit: cover;
     rotate: -90deg;
@@ -812,7 +820,7 @@ line-height: normal;
 .asset-2 {
     position: absolute;
     width: 6%;
-    top: 7%;
+    top: -6%;
     left: 13%;
     object-fit: cover;
 }
@@ -877,15 +885,17 @@ line-height: normal;
     }
 }
 .avatarsdk-band {
-    width: 75%;
-    
-}
-@media screen and (max-width: 768px) {
-    .avatarsdk-band {
-        width: 100%;
-        position: relative;
+    width: 95%;
+      }
+
+  @media screen and (max-width: 768px) {
+    .avatarsdk-band  {
+      width: 178%; 
+      left:4%;
+      position: relative;
+ 
     }
-}
+  }
 .swiperoverflow{
     overflow-x: visible !important;
   }
@@ -1167,6 +1177,25 @@ line-height: normal;
   
     }
   }
+  .dynamicdisplay{
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dynamicdisplay {
+      display: none;
+    }
+  }
+  
+  .dynamicdisplay2{
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dynamicdisplay2{
+      display: block;
+    }
+  }
 
 .slidetext{
     color: #F1F1F1;
@@ -1175,7 +1204,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px;
 z-index: 1;
-width: 75%;
+width: 89%;
   }
   @media screen and (max-width: 500px) {
     .slidetext{

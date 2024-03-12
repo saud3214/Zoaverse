@@ -22,7 +22,7 @@
                 <div id="hedblur" style="background: rgba(30, 30, 30, 0.8); backdrop-filter: blur(10px); width: 100vw; height: 150vh; z-index: -1; position: absolute; display: none;"></div>
                 <div class="container-fluid ">
                     <a class="navbar-brand pe-lg-5" href="#"> <img class="logo" src="assets/images/Logo.Ar.svg" alt="brand logo"/> </a>
-                    <div style="background-color: #085dff; padding: 10px; border-radius: 20px;" class="d-lg-none">
+                    <div style="background-color: #085dff; padding: 10px; border-radius: 6px;" class="d-lg-none">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="swipersec d-flex flex-column" style="background-image: url('./assets/images/swiperbackgr.png'); background-size: contain; background-position: bottom; background-repeat: no-repeat;">
+            <div id="fstswiper" class="fstswiper swipersec d-flex flex-column">
                 <div class="swipersecw">
                     <div class="row d-flex align-items-start justify-content-end">
                         <div id="horizntlswiper" class="col-8 text-end d-flex flex-column pt-5 movtext  gap-2">
@@ -268,6 +268,9 @@
                         <div class="swiper-button-next swiperbtnnext btnclass" style="  color: black; width: 50px; height: 50px; border-radius: 50%;"></div>
                         <div class="swiper-button-prev swiperbtnprev btnclass" style=" color: black; border-radius: 50%; width: 50px; height: 50px;"></div>
                     </div>
+                        <div  class="position-absolute bgsw1 " style="top: 70%; z-index: -1; ">
+                            <img src="./assets/images/swiperbackgr.png">
+                        </div>
                 </div>
             </div>
         </div>
@@ -275,7 +278,9 @@
         <div id="d1" class="main_divlast position-relative d-flex align-items-center" >
             <div class="pt-lg-5 pb-3 bg-white rounded-4 d-flex text-center justify-content-center align-items-end " style="height: 80%; width: 90%; border-radius: 40px; background: linear-gradient(180deg, #a6a5a5 0%, #f1f1f1 38.9%); ">
                 <div class="d-flex flex-column align-items-center justify-content-center">
-                    <img class="avatarsdk-band img1" src="assets/images/AvatarSDK_Band_Transp-Neutral-wGlasees-1024x576 2.png" alt="people avatar" />
+                    <img class="avatarsdk-band img1 dynamicdisplay " src="assets/images/AvatarSDK_Band_Transp-Neutral-wGlasees-1024x576 2.png" />
+                    <img class="avatarsdk-band img1 dynamicdisplay2  " src="assets/images/AvatarSDK_Band_Transp-Neutral-wGlasees-1024x576 2.png" />
+
                     <div class="div-3 t1 pb-3 ">
                         <p class="we-work-hard-play">عبر عن نفسك بشخصيتك الإفتراضية الخاصة</p>
                         <p class="p">

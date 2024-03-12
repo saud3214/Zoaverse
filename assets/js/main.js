@@ -87,6 +87,7 @@ function showdivs() {
 
 
 
+
 gsap.to(".img1", {
 y: 20,
 ease: "power2.inOut",
@@ -102,10 +103,9 @@ scrollTrigger: {
 });
 
 gsap.to(".e1", {
-y: -150,
+y: -250,
 rotation: -10, // Rotate 360 degrees during the animation
 duration:1,
-
 ease: "power2.inOut",
 scrollTrigger: {
     trigger: "#d1",
@@ -120,7 +120,6 @@ gsap.to(".s1", {
 y: 0,
 rotation: -360, // Rotate 360 degrees during the animation
 duration:1,
-
 ease: "power2.inOut",
 scrollTrigger: {
     trigger: "#d1",
@@ -152,7 +151,6 @@ gsap.to(".asset-3", {
 y: 10,
 rotation: -10, // Rotate 360 degrees during the animation
 duration:1,
-
 ease: "power2.inOut",
 scrollTrigger: {
     trigger: "#d1",
@@ -167,7 +165,6 @@ gsap.to(".asset-2", {
 y: 80,
 rotation: -10, // Rotate 360 degrees during the animation
 duration:1,
-
 ease: "power2.inOut",
 scrollTrigger: {
     trigger: "#d1",
@@ -214,12 +211,12 @@ scrollTrigger: {
 gsap.to(".t1", {
 opacity: 1,
 y:  0,
-duration: 2,
-delay:2,
+duration: 1,
+delay:1,
 ease: "power2.inOut",
 scrollTrigger: {
   trigger: "#d1",
-  start: "top 40%",
+  start: "top 80%",
   end: "bottom 90%",
   scrub: true,
 },
@@ -267,6 +264,22 @@ gsap.to(".movtextar", {
 
 
 
+gsap.to(".bgsw1", {
+    opacity: 1,
+    duration: 2,
+    y: 20,
+    delay: 1,
+    ease: "power2.inOut",
+    scrollTrigger: {
+      trigger: "#fstswiper",
+      start: "top 90%",
+      end: "bottom 10%",
+      ease: "power2.inOut",
+      toggleActions: "play restart reverse reset", 
+    },
+  });
+
+ 
 swiper4 = new Swiper(".mySwiperarticle", {
   loop: true,
   pagination: {
@@ -278,7 +291,7 @@ swiper4 = new Swiper(".mySwiperarticle", {
       prevEl: ".swiper-button-prev",
   },
   autoplay: {
-      delay: 1000, // Delay in milliseconds between slides
+      delay: 2000, // Delay in milliseconds between slides
   },
  
   breakpoints: {
@@ -299,12 +312,13 @@ swiper4 = new Swiper(".mySwiperarticle", {
           spaceBetween: 10,
       },
   },
-  on: {
-    slideChangeTransitionEnd: function () {
-        swiper4.autoplay.stop(); // stop autoplay after the first transition
-        swiper4.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
-    },
-  },  speed: 3000, // Adjust the speed (in milliseconds)
+//   on: {
+//     slideChangeTransitionEnd: function () {
+//         swiper4.autoplay.stop(); // stop autoplay after the first transition
+//         swiper4.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
+//     },
+//   },  
+  speed: 2000, // Adjust the speed (in milliseconds)
   effect: "slide",
 });
 
@@ -321,7 +335,7 @@ navigation: {
     prevEl: ".swiper-button-prev",
 },
 autoplay: {
-    delay: 3000, // Delay in milliseconds between slide
+    delay: 2000, // Delay in milliseconds between slide
 },
 breakpoints: {
     300: {
@@ -338,7 +352,7 @@ breakpoints: {
     },
 },
 
-speed: 3000, // Adjust the speed (in milliseconds)
+speed: 2000, // Adjust the speed (in milliseconds)
 effect: "slide",
 });
 

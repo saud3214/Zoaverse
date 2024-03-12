@@ -156,10 +156,9 @@ gsap.to(".asset-3", {
   },
 });
 gsap.to(".asset-2", {
-  y: 100,
+  y: 150,
   rotation: -10, // Rotate 360 degrees during the animation
   duration: 1,
-
   ease: "power2.inOut",
   scrollTrigger: {
     trigger: "#d1",
@@ -242,6 +241,21 @@ gsap.to(".updiv", {
   },
 });
 
+gsap.to(".bgsw1", {
+  opacity: 1,
+  duration: 2,
+  y: 20,
+  delay: 1,
+  ease: "power2.inOut",
+  scrollTrigger: {
+    trigger: "#fstswiper",
+    start: "top 90%",
+    end: "bottom 10%",
+    ease: "power2.inOut",
+    toggleActions: "play restart reverse reset", 
+  },
+});
+
 gsap.to(".movtextar", {
   x: 650,
   duration: 3,
@@ -266,7 +280,7 @@ swiper4 = new Swiper(".mySwiperarticle", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 3000, // Delay in milliseconds between slides
+    delay: 2000, // Delay in milliseconds between slides
     reverseDirection: true, // This is the reverse option
   },
   breakpoints: {
@@ -287,8 +301,7 @@ swiper4 = new Swiper(".mySwiperarticle", {
       spaceBetween: 10,
     },
   },
-
-  speed: 3000, // Adjust the speed (in milliseconds)
+  speed: 2000, // Adjust the speed (in milliseconds)
   effect: "slide",
 });
 
@@ -326,7 +339,7 @@ swiper5 = new Swiper(".mySwiperarticle2", {
   //       swiper5.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
   //   },},
 
-  speed: 3000, // Adjust the speed (in milliseconds)
+  speed: 2000, // Adjust the speed (in milliseconds)
   effect: "slide",
 });
 

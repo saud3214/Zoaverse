@@ -24,7 +24,14 @@ h1, h2, h3,p {
   top: 0 !important;
   z-index: 100 !important; 
   }
-
+.bgswiper{
+  background-image: url('/assets/images/swiperbackgr.png');
+  transform: translatex(-60px);
+  -webkit-transform: translate(-60px);
+  -moz-transform: translate(-60px);
+  -ms-transform: translate(-60px);
+  -o-transform: translate(-60px);
+}
 .panel{
     padding: 0px !important;
     
@@ -116,13 +123,22 @@ h1, h2, h3,p {
   }
 }
 .c1, .img1 {
-  transform: translateY(-60px);
-  -webkit-transform: translateY(-60px);
-  -moz-transform: translateY(-60px);
-  -ms-transform: translateY(-60px);
-  -o-transform: translateY(-60px);
+  transform: translateY(-200px);
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
 }
-.t1{
+@media screen and (max-width: 768px) {
+  .img1 {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+}
+}
+.t1, .bgsw1{
   opacity: 0;
 }
  .e2 {
@@ -546,6 +562,27 @@ line-height: normal;
     width: 65%;
 }
 }
+
+
+.dynamicdisplay{
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .dynamicdisplay {
+    display: none;
+  }
+}
+
+.dynamicdisplay2{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .dynamicdisplay2{
+    display: block;
+  }
+}
 .cardheading{
     color: #F1F1F1;
 font-family: Montserrat;
@@ -903,8 +940,8 @@ line-height: normal;
   @media screen and (max-width: 768px) {
     .asset-2 {
       width: 25%;
-      top:-5%;
-      left:70%;
+      top:-3%;
+      left:56%;
 
     }
   }
@@ -969,13 +1006,13 @@ line-height: normal;
   }
 }
   .avatarsdk-band {
-    width: 75%;
+    width: 95%;
       }
 
   @media screen and (max-width: 768px) {
     .avatarsdk-band  {
-      width: 100%; 
-      left:0%;
+      width: 178%; 
+      left:4%;
       position: relative;
  
     }
@@ -1356,9 +1393,6 @@ text-transform: uppercase;
 }
 
 
-.hidden{
-  display: none;
-}
 
 /* .swiper2 .swiper-slide.swiper-slide-active {
   width: 55% !important;
