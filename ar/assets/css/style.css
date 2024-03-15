@@ -205,6 +205,14 @@ span {
         height: auto;
     }
 }
+.widthtext{
+    width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    .widthtext {
+      width: 100%;  
+    }
+  }
 .c1, .img1 {
     transform: translateY(-50px);
     -webkit-transform: translateY(-50px);

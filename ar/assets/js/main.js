@@ -279,10 +279,10 @@ swiper4 = new Swiper(".mySwiperarticle", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay: {
-    delay: 2000, // Delay in milliseconds between slides
-    reverseDirection: true, // This is the reverse option
-  },
+  // autoplay: {
+  //   delay: 2000, // Delay in milliseconds between slides
+  //   reverseDirection: true, // This is the reverse option
+  // },
   breakpoints: {
     300: {
       slidesPerView: 1,
@@ -333,11 +333,7 @@ swiper5 = new Swiper(".mySwiperarticle2", {
       spaceBetween: 50,
     },
   },
-  // on: {
-  //   slideChangeTransitionEnd: function () {
-  //       swiper5.autoplay.stop(); // stop autoplay after the first transition
-  //       swiper5.params.autoplay.disableOnInteraction = true; // disable autoplay on interaction
-  //   },},
+
 
   speed: 2000, // Adjust the speed (in milliseconds)
   effect: "slide",

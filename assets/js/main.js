@@ -291,7 +291,7 @@ swiper4 = new Swiper(".mySwiperarticle", {
       prevEl: ".swiper-button-prev",
   },
   autoplay: {
-      delay: 2000, // Delay in milliseconds between slides
+      delay: 3000, // Delay in milliseconds between slides
   },
  
   breakpoints: {
