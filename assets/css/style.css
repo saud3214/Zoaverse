@@ -151,7 +151,7 @@ h1, h2, h3,p {
 }
 
 .widthtext{
-  width: 50%;
+  width: 80%;
 }
 @media screen and (max-width: 768px) {
   .widthtext {
@@ -883,7 +883,7 @@ line-height: normal;
   }
 }
 .swiper2 .swiper2btnnext{
-  left: 61%;
+  left: 60%;
   top: 80%;
    
 }
@@ -894,7 +894,7 @@ line-height: normal;
   }
 }
 .swiper2 .swiper2btnprev{
-  left: 57%; 
+  left: 56%; 
   top: 80% !important;
 }
 @media screen and (max-width: 768px) {
@@ -933,12 +933,24 @@ line-height: normal;
   @media screen and (max-width: 768px) {
     .asset-3 {
       width: 30%;
-      top: 32%;
-      left:81%;
+      top: 30%;
+      left:82%;
     }
   }
   
+.bgswipersty{
+  top: 70%;
+   width: 100vw;
+  z-index: -1;   
+}
 
+
+@media screen and (max-width: 768px) {
+  .bgswipersty {
+    top: 85%;
+
+  }
+}
 .socialicon:hover {
     background: white;
 }
@@ -969,7 +981,7 @@ line-height: normal;
     width: 64px;
     height: 65px;
     top: 15px;
-    left: 43.5%;
+    left: 38%;
     transform: rotate(-9.14deg);
 }
 @media screen and (max-width: 768px) {
@@ -983,7 +995,7 @@ line-height: normal;
     width: 80px;
     height: 80px;
     top: 11px;
-    left: 42%;
+    left: 36%;
     background-color: #f0f0f0;
     border-radius: 45px;
 }
@@ -994,17 +1006,24 @@ line-height: normal;
     }
 .rectangle-3 {
     position: absolute;
-    width: 91%;
+    width: 80%;
     height: 88%;
     top: 0;
-    left: 4%;
+    left: 2%;
     background-color: #bf55f2;
     border-radius: 40px;
+}
+@media screen and (max-width: 1600px)  and (min-width: 1100px) {
+  .rectangle-3{
+    width: 91%;
+    left: 0%;
+
+       }
 }
   @media screen and (max-width: 768px) {
     .rectangle-3 {
       width: 96%;
-      left:-30px;
+      left:-9.2%;
     }
   }
   .overlap-group-wrapper {
@@ -1012,6 +1031,11 @@ line-height: normal;
     left: 73%;
     position: absolute;
     
+}
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+  .overlap-group-wrapper  {
+    left: 71%;
+  }
 }
 @media screen and (max-width: 768px) {
   .overlap-group-wrapper {
@@ -1026,6 +1050,11 @@ line-height: normal;
 }
   .avatarsdk-band {
     width: 95%;
+      }
+      @media screen and (min-width: 1100px) and (max-width: 1650px) {
+        .avatarsdk-band  {
+          width: 65%; 
+        }
       }
 
   @media screen and (max-width: 768px) {
@@ -1152,13 +1181,13 @@ left: -7%;
   @media screen and (max-width: 768px) {
     .div-2 {
       width: 93%;
-      left: 0%;
+      left: 1%;
       padding: 15px;
         top: 27%;
          }
   }
 .div-2c {
-    width: 100%;
+    width: 83%;
     top: 30%;
     left: 0%;
     display: flex;
@@ -1169,10 +1198,18 @@ left: -7%;
     padding-left: 10px;
     padding-right: 10px;
 }
+@media screen and (max-width: 1600px)  and (min-width: 1100px) {
+  .div-2c {
+    width: 92%;
+    left: 0%;
+
+       }
+}
   @media screen and (max-width: 768px) {
     .div-2c {
       width: 91%;
-      top: 28%;
+      top: 29%;
+      left: -7%;
 
          }
   }
@@ -1188,25 +1225,31 @@ left: -7%;
   }
   @media screen and (max-width: 768px) {
     .rectangle-2 {
-      width: 90%;
+      width: 91%;
       height: 61%;
          }
   }
 .rectangle-2c {
     position: absolute;
-    width: 87%;
+    width: 78%;
     height: 68%;
     top: 63px;
-    left: 6%;
+    left: 3%;
     background-color: #f0f0f0;
     border-radius: 34px;
+}
+@media screen  and (min-width: 1100px) and (max-width: 1600px)  {
+  .rectangle-2c{
+    width: 87%;
+    left: 2%;
+       }
 }
  
  
   @media screen and (max-width: 768px) {
     .rectangle-2c {
-      width: 91%;
-      left:-22px;
+      width: 91.4%;
+      left:-7%;
       height: 66%;
          }
   }

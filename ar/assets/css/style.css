@@ -844,7 +844,7 @@ line-height: normal;
     width: 64px;
     height: 65px;
     top: 15px;
-    left: 13%;
+    left: 14%;
     transform: rotate(-9.14deg);
 }
 @media screen and (max-width: 768px) {
@@ -857,7 +857,7 @@ line-height: normal;
     width: 80px;
     height: 80px;
     top: 11px;
-    left: 12%;
+    left: 13%;
     background-color: #f0f0f0;
     border-radius: 45px;
 }
@@ -869,7 +869,7 @@ line-height: normal;
 .rectangle-3 {
     position: absolute;
     width: 36%;
-    height: 75%;
+    height: 77%;
     top: 0;
     left: 0;
     background-color: #bf55f2;
@@ -881,7 +881,7 @@ line-height: normal;
     }
 }
 .overlap-group-wrapper {
-    top: 52%;
+    top: 50%;
     left: 3%;
     position: absolute;
 }
@@ -895,7 +895,11 @@ line-height: normal;
 .avatarsdk-band {
     width: 95%;
       }
-
+      @media screen and (min-width: 1100px) and (max-width: 1650px) {
+        .avatarsdk-band  {
+          width: 65%; 
+        }
+      }
   @media screen and (max-width: 768px) {
     .avatarsdk-band  {
       width: 178%; 
@@ -997,6 +1001,11 @@ line-height: normal;
         left: 2%;
     }
 }
+@media screen and (min-width: 1100px) and (max-width:1600px) {
+    .group {
+        left: 72%;
+    }
+  }
 
 .overlap-group-2 {
     position: relative;
@@ -1053,13 +1062,15 @@ line-height: normal;
     .div-2c {
         width: 88%;
         top: 28%;
+        left: 3%;
+
     }
 }
 
 .rectangle-2 {
     position: absolute;
-    width: 76%;
-    height: 61%;
+    width: 77%;
+    height: 62%;
     top: 63px;
     left: 6px;
     background-color: #f0f0f0;
@@ -1067,8 +1078,10 @@ line-height: normal;
 }
 @media screen and (max-width: 768px) {
     .rectangle-2 {
-        width: 91%;
-        height: 61%;
+        width: 92%;
+        height: 62%;
+        left: 2%;
+
     }
 }
 
@@ -1076,7 +1089,7 @@ line-height: normal;
     position: absolute;
     width: 35%;
     height: 55%;
-    top: 63px;
+    top: 20%;
     left: 5px;
     background-color: #f0f0f0;
     border-radius: 34px;
@@ -1084,6 +1097,8 @@ line-height: normal;
 @media screen and (max-width: 768px) {
     .rectangle-2c {
         width: 91%;
+        left: 2%;
+
     }
 }
 .rectangle {
